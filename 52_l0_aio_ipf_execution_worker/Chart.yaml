@@ -1,0 +1,7 @@
+apiVersion: v1
+appVersion: "develop"
+description: S1PRO L0 AIOP IPF Execution Worker
+name: s1pro-l0-aio-ipf-execution-worker
+version: 3.33.0-SNAPSHOT
+maintainers:
+  - name: Werum Software & Systems

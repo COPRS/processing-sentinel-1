@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routing description="routing for IngestionEvents">
+	<route description="route for L0_SEGMENT nrt">
+		<input_key>t-pdgs-l0-segment-catalog-events-nrt</input_key>
+		<output_key>L0_SEGMENT</output_key>
+		<route_to>
+			<topic>t-pdgs-l0asp-preparation-jobs-nrt</topic>
+		</route_to>
+	</route>
+	<route description="route for L0_SEGMENT fast">
+		<input_key>t-pdgs-l0-segment-catalog-events-fast</input_key>
+		<output_key>L0_SEGMENT</output_key>
+		<route_to>
+			<topic>t-pdgs-l0asp-preparation-jobs-fast</topic>
+		</route_to>
+	</route>
+	<route description="route for L0_SEGMENT late">
+		<input_key>t-pdgs-l0-segment-catalog-events-late</input_key>
+		<output_key>L0_SEGMENT</output_key>
+		<route_to>
+			<topic>t-pdgs-l0asp-preparation-jobs-late</topic>
+		</route_to>
+	</route>
+	<route description="route for L0_SEGMENT pt">
+		<input_key>t-pdgs-l0-segment-catalog-events-pt</input_key>
+		<output_key>L0_SEGMENT</output_key>
+		<route_to>
+			<topic>t-pdgs-l0asp-preparation-jobs-pt</topic>
+		</route_to>
+	</route>
+	<route description="route for L0_SEGMENT operator-demand">
+		<input_key>t-pdgs-operator-demand-events</input_key>
+		<output_key>L0_SEGMENT</output_key>
+		<route_to>
+			<topic>t-pdgs-l0asp-preparation-jobs-operator-demand</topic>
+		</route_to>
+	</route>
+	<route description="route for L0_SEGMENT operator-demand">
+		<input_key>t-pdgs-l0-segment-catalog-events-operator-demand</input_key>
+		<output_key>L0_SEGMENT</output_key>
+		<route_to>
+			<topic>t-pdgs-l0asp-preparation-jobs-operator-demand</topic>
+		</route_to>
+	</route>
+</routing>
