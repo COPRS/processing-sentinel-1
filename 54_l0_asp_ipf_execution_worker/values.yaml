@@ -34,7 +34,7 @@ s1pro_l0_asp_ipf_execution_worker_mqi:
     xmx: "512m"
 
 aspIpfSimImage:
-  name: s1pro-core-ipf-execution-worker-simulators
+  name: rs-core-s1-ipf-simulator
 
 aspIpfImage:
   name: s1pro-core-ipf-execution-worker-l0-asp

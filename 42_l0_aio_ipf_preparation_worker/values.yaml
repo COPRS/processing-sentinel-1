@@ -8,7 +8,7 @@ mqiService:
   port: 8081
 
 image:
-  name: s1pro-core-ipf-preparation-worker
+  name: rs-core-ipf-preparation-worker
 
 s1pro_l0_aio_ipf_preparation_worker:
   cpu:

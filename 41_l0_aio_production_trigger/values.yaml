@@ -8,7 +8,7 @@ mqiService:
   port: 8081
 
 image:
-  name: s1pro-core-production-trigger
+  name: rs-core-production-trigger
 
 s1pro_l0_aio_production_trigger:
   cpu:
