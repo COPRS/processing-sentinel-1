@@ -174,7 +174,7 @@ spec:
   - metadata:
       name: data-localwd
     spec:
-      storageClassName: sc-ssd-delete
+      #storageClassName: sc-ssd-delete
       accessModes:
       - ReadWriteOnce
       resources:
