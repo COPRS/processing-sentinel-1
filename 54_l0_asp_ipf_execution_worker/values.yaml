@@ -37,5 +37,5 @@ aspIpfSimImage:
   name: rs-core-s1-ipf-simulator
 
 aspIpfImage:
-  name: s1pro-core-ipf-execution-worker-l0-asp
+  name: rs-ipf-s1-asp
   

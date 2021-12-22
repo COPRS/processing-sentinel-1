@@ -37,4 +37,4 @@ aioIpfSimImage:
   name: rs-core-s1-ipf-simulator
 
 aioIpfImage:
-  name: s1pro-core-ipf-execution-worker-l0-aio
+  name: rs-ipf-s1-aio
