@@ -15,13 +15,6 @@
 			<topic>t-pdgs-l0asp-preparation-jobs-fast</topic>
 		</route_to>
 	</route>
-	<route description="route for L0_SEGMENT late">
-		<input_key>t-pdgs-l0-segment-catalog-events-late</input_key>
-		<output_key>L0_SEGMENT</output_key>
-		<route_to>
-			<topic>t-pdgs-l0asp-preparation-jobs-late</topic>
-		</route_to>
-	</route>
 	<route description="route for L0_SEGMENT pt">
 		<input_key>t-pdgs-l0-segment-catalog-events-pt</input_key>
 		<output_key>L0_SEGMENT</output_key>
