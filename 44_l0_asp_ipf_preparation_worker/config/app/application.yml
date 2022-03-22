@@ -1,0 +1,197 @@
+spring:
+  main:
+    banner-mode: "off"
+  application:
+    name: s1pdgs-l0-asp-ipf-preparation-worker
+    
+# Logging
+logging:
+  config: ${log4j_config:log/log4j2.yml}
+
+# Metadata config
+metadata:
+  # Metadata Catalog host
+  host: ${catalog_rest_host}
+  # Maximal number of retries when query fails 
+  rest-api_nb-retry: {{ .Values.metadataCatalog.restApiNbRetry }}
+  # Temporisation in ms between 2 retries
+  rest-api_tempo-retry-ms: {{ .Values.metadataCatalog.restApiTempoRetryMs }} 
+  
+# Kafka config
+kafka:
+  # host:port to use for establishing the initial connection to the Kafka cluster
+  bootstrap-servers: ${kafka_bootstrap-servers}
+  # Hostname
+  hostname: ${HOSTNAME}
+  # Topic name for the errors
+  error-topic: ${kafka_topic_errors}
+  # Kafka Producer config
+  producer:
+    # When greater than zero, enables retrying of failed sends
+    max-retries: 10
+     
+appcatalog:
+  # URI of the applicative data catalog APIs
+  host-uri: http://s1pro-app-catalog-svc:8080
+  # Number of max retries to connect API
+  max-retries: 100
+  # TempoRetry rate for retries to connect API
+  tempo-retry-ms: 1000
+  # Timeout of connections to the API
+  tm-connect-ms: 5000
+     
+ipf-preparation-worker:
+  # Directory where the task tables are located
+  diroftasktables: /app/tasktables/
+  # Maximal number of task tables in memory. The application will not start in there are more than this number tasktables in the directory
+  maxnboftasktable: 1
+  # (Fixed delay) Period between 2 generations
+  jobgenfixedrate: 1000
+  # Minimal time between two execution of the following method: checking the requirements to generate a job specific to the level
+  waitprimarycheck:
+    tempo: 30000
+    # Maximum waiting time for partial segments to be arrived - set to 20 hour default
+    max-timelife-s: 72000
+  # Minimal time between two execution of the following method: checking the global requirements to generate a job
+  waitmetadatainput:
+    tempo: 60000
+    max-timelife-s: 50000
+  # Minimal time between two execution of the following method: finishing job after it has been sent to execution worker
+  waitaftersend:
+    tempo: 1800000
+  # Default family of a output defined in the task table
+  defaultfamily: BLANK
+  # Family assignation of a specific input
+  inputfamiliesstr: ${product-inputs-families_l0-segment-ipf-preparation-worker}
+  # Family assignation of a specific output
+  outputfamiliesstr: ${product-outputs-families_l0-segment-ipf-preparation-worker}  
+  late-topic-active: {{ .Values.preparator.asp.lateTopicActive }}
+  lateness-config:
+  - input-topic: t-pdgs-l0asp-preparation-jobs-pt
+    late-topic: t-pdgs-l0asp-preparation-jobs-late
+    late-after-milliseconds: {{ .Values.preparator.asp.pt.lateAfterMilliseconds }} # 3h 
+  - input-topic: t-pdgs-l0asp-preparation-jobs-nrt
+    late-topic: t-pdgs-l0asp-preparation-jobs-late
+    late-after-milliseconds: {{ .Values.preparator.asp.nrt.lateAfterMilliseconds }} # 3h
+  - input-topic: t-pdgs-l0asp-preparation-jobs-fast
+    late-topic: t-pdgs-l0asp-preparation-jobs-late
+    late-after-milliseconds: {{ .Values.preparator.asp.fast.lateAfterMilliseconds }} # 24h
+  # Overlap per acquisitions: map {acquisition -> overlap}
+  type-overlap:
+    EW: 8.2F
+    IW: 7.4F
+    SM: 7.7F
+    WV: 0.0F
+  # Slice length per acquisition: map {acquisition -> slice length}
+  type-slice-length:
+    EW: 60.0F
+    IW: 25.0F
+    SM: 25.0F
+    WV: 0.0F
+  # Configuration of type name mapping between Task Table (left) and Job Order (right)
+  map-type-meta:
+    AUX_POE: AUX_POEORB
+    AUX_PRE: AUX_PREORB
+    AUX_RES: AUX_RESORB
+    SM_RAW__0S: S[1-6]_RAW__0S
+    SM_RAW__0A: S[1-6]_RAW__0A
+    SM_RAW__0C: S[1-6]_RAW__0C
+    SM_RAW__0N: S[1-6]_RAW__0N
+    AN_RAW__0S: N[1-6]_RAW__0S
+    AN_RAW__0A: N[1-6]_RAW__0A
+    AN_RAW__0C: N[1-6]_RAW__0C
+    AN_RAW__0N: N[1-6]_RAW__0N
+  # Flag OQC Check per Product Family
+  oqcCheck:
+    - L0_SLICE
+  product-categories:
+    preparation-jobs:
+      # Period in milliseconds between 2 polls of next message
+      fixed-delay-ms: 500
+      # Initial delay in milliseconds before starting consuming message
+      init-delay-poll-ms: 2000
+
+# Application status configuration
+status:
+  # (fixed delay) period in milliseconds between 2 check if application shall be stopped or not, default is 3000
+  delete-fixed-delay-ms: 1800000
+  # The number of consecutive processing errors leading to the state FATALERROR, default is 100
+  max-error-counter-processing: 3
+  # The number of consecutive MQI errors leading to the state FATALERROR, default is 100
+  max-error-counter-mqi: 30
+
+process:
+  # Level for job generator
+  level: L0_SEGMENT
+  # Hostname
+  hostname: ${HOSTNAME}
+  # Hostname of the production trigger (unused)
+  trigger-hostname: s1pro-l0-asp-production-trigger-0
+  # Application mode (PROD or TEST) (unused)
+  mode: PROD
+  # Use to configured the dynamic processing parameters in the generated jobOrder. Format map: key: value
+  params:
+    Processing_Mode: FAST                      
+    Timeout: 300                     
+  # Use to configured the LogLevelStdout in the generated jobOrder
+  loglevelstdout: INFO
+  # Use to configured the LogLevelStderr in the generated jobOrder
+  loglevelstderr: INFO
+  # Use to configured the ProcessingStation in the generated jobOrder
+  processingstation: WILE
+  # Use to specify the regular expression to use for the output in the wrapper.
+  outputregexps:
+    SM_RAW__0S: ^S1[A-B]_S[1-6]_RAW__0S.*$                          
+    SM_RAW__0A: ^S1[A-B]_S[1-6]_RAW__0A.*$                          
+    SM_RAW__0C: ^S1[A-B]_S[1-6]_RAW__0C.*$                          
+    SM_RAW__0N: ^S1[A-B]_S[1-6]_RAW__0N.*$                          
+    AN_RAW__0S: ^S1[A-B]_N[1-6]_RAW__0S.*$                          
+    AN_RAW__0A: ^S1[A-B]_N[1-6]_RAW__0A.*$                          
+    AN_RAW__0C: ^S1[A-B]_N[1-6]_RAW__0C.*$                          
+    AN_RAW__0N: ^S1[A-B]_N[1-6]_RAW__0N.*$                          
+    ZS_RAW__0S: ^S1[A-B]_Z[1-6]_RAW__0S.*$                          
+    ZS_RAW__0A: ^S1[A-B]_Z[1-6]_RAW__0A.*$                           
+    ZS_RAW__0C: ^S1[A-B]_Z[1-6]_RAW__0C.*$                           
+    ZS_RAW__0N: ^S1[A-B]_Z[1-6]_RAW__0N.*$                           
+    REP_L0PSA_: ^S1[A|B|_]_OPER_REP_ACQ.*$                          
+    REP_EFEP_: ^S1[A|B|_]_OPER_REP_PASS.*.EOF$                      
+  # (Fixed delay) Delay in milliseconds between 2 next messages
+  fixed-delay-ms: 200
+  # Initial delay in milliseconds before the first next message
+  initial-delay-ms: 5000
+
+mqi:
+  # The host and port for querying MQI server
+  host-uri: http://localhost:8081
+  # The maximal number of consecutive retries following a MQI request error, default is 3
+  max-retries: 45
+  # Time between retries in milliseconds, default is 1000
+  tempo-retry-ms: 2000
+    
+level0:
+  # Local directory where the EDRS session file are temporarly uploaded to extract the raws list of the session
+  dir-extractor-sessions: /data/sessions/
+  
+# Unused
+level-products:
+  pathroutingxmlfile:
+  
+# Unused
+app-l0-segment:
+  blacklist-pattern: "^([0-9a-z]{2})([0-9a-z_]{1}).*(GP|HK).*SAFE$"
+  name-regexp-pattern: "^([0-9a-z]{2})([0-9a-z]{1})_(([0-9a-z]{2})_RAW__0S([0-9a-z_]{2}))_([0-9a-z]{15})_([0-9a-z]{15})_([0-9a-z_]{6})_([0-9a-z_]{6})\\w{1,}\\.SAFE(/.*)?$"
+  name-regexp-groups:
+    missionId: 1
+    satelliteId: 2 
+    acquisition: 4
+    polarisation: 5
+    startTime: 6
+    stopTime: 7
+    datatakeId: 9
+
+# Timeout configuration for asp segment completion per timeliness
+l0asp:
+  waiting-time-hours-minimal-fast: {{ .Values.preparator.asp.fast.minimal }}
+  waiting-time-hours-nominal-fast: {{ .Values.preparator.asp.fast.nominal }}
+  waiting-time-hours-minimal-nrt-pt: {{ .Values.preparator.asp.nrt.minimal }}
+  waiting-time-hours-nominal-nrt-pt: {{ .Values.preparator.asp.nrt.nominal }}

@@ -1,0 +1,7 @@
+apiVersion: v1
+appVersion: "develop"
+description: S1PRO L0 ASP IPF Preparation Trigger
+name: s1pro-l0-asp-production-trigger
+version: 3.32.1-SNAPSHOT
+maintainers:
+  - name: Werum Software & Systems

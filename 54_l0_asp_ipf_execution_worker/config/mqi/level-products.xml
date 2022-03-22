@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routing description="routing for publishing product of category LEVEL_PRODUCTS">
+	<route description="route for L0_ACN nrt">
+		<input_key>t-pdgs-l0asp-execution-jobs-nrt</input_key>
+		<output_key>L0_ACN</output_key>
+		<route_to>
+			<topic>t-pdgs-l0asp-l0-acn-production-events-nrt</topic>
+		</route_to>
+	</route>
+	<route description="route for L0_ACN fast">
+		<input_key>t-pdgs-l0asp-execution-jobs-fast</input_key>
+		<output_key>L0_ACN</output_key>
+		<route_to>
+			<topic>t-pdgs-l0asp-l0-acn-production-events-fast</topic>
+		</route_to>
+	</route>
+	<route description="route for L0_ACN late">
+		<input_key>t-pdgs-l0asp-execution-jobs-late</input_key>
+		<output_key>L0_ACN</output_key>
+		<route_to>
+			<topic>t-pdgs-l0asp-l0-acn-production-events-late</topic>
+		</route_to>
+	</route>
+	<route description="route for L0_ACN pt">
+		<input_key>t-pdgs-l0asp-execution-jobs-pt</input_key>
+		<output_key>L0_ACN</output_key>
+		<route_to>
+			<topic>t-pdgs-l0asp-l0-acn-production-events-pt</topic>
+		</route_to>
+	</route>
+	<route description="route for L0_ACN operator-demand">
+		<input_key>t-pdgs-l0asp-execution-jobs-operator-demand</input_key>
+		<output_key>L0_ACN</output_key>
+		<route_to>
+			<topic>t-pdgs-l0asp-l0-acn-production-events-operator-demand</topic>
+		</route_to>
+	</route>
+	
+	<route description="route for L0_SLICE nrt">
+		<input_key>t-pdgs-l0asp-execution-jobs-nrt</input_key>
+		<output_key>L0_SLICE</output_key>
+		<route_to>
+			<topic>t-pdgs-l0asp-l0-slice-production-events-nrt</topic>
+		</route_to>
+	</route>
+	<route description="route for L0_SLICE fast">
+		<input_key>t-pdgs-l0asp-execution-jobs-fast</input_key>
+		<output_key>L0_SLICE</output_key>
+		<route_to>
+			<topic>t-pdgs-l0asp-l0-slice-production-events-fast</topic>
+		</route_to>
+	</route>
+	<route description="route for L0_SLICE late">
+		<input_key>t-pdgs-l0asp-execution-jobs-late</input_key>
+		<output_key>L0_SLICE</output_key>
+		<route_to>
+			<topic>t-pdgs-l0asp-l0-slice-production-events-late</topic>
+		</route_to>
+	</route>
+	<route description="route for L0_SLICE pt">
+		<input_key>t-pdgs-l0asp-execution-jobs-pt</input_key>
+		<output_key>L0_SLICE</output_key>
+		<route_to>
+			<topic>t-pdgs-l0asp-l0-slice-production-events-pt</topic>
+		</route_to>
+	</route>
+	<route description="route for L0_SLICE operator-demand">
+		<input_key>t-pdgs-l0asp-execution-jobs-operator-demand</input_key>
+		<output_key>L0_SLICE</output_key>
+		<route_to>
+			<topic>t-pdgs-l0asp-l0-slice-production-events-operator-demand</topic>
+		</route_to>
+	</route>
+
+</routing>
