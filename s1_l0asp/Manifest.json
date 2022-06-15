@@ -1,0 +1,13 @@
+{
+	"ProcessorID": "s1_asp",
+	"Version": "<VERSION>",
+	"ReleaseDate": "<RELEASE_DATE>",
+	"Mission": "S1",
+	"Level": [
+		"L0"
+	],
+	"Description": "The RS Addon contains the S1 ASP",
+	"ReleaseItems": [
+		<RELEASE_ITEMS>
+	]
+}
