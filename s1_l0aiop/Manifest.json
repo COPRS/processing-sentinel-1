@@ -1,7 +1,7 @@
 {
 	"ProcessorID": "s1_aiop",
-	"Version": "",
-	"ReleaseDate": "2022-06-15",
+	"Version": "<VERSION>",
+	"ReleaseDate": "<RELEASE_DATE>",
 	"Mission": "S1",
 	"Level": [
 		"L0"

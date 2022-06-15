@@ -45,7 +45,7 @@ runs:
   - name: Generate Manifest
     shell: bash
     run: |
-      ITEMS=$(for f in `ls -1 executables`; do echo \"$f\",; done ; echo \"Manifest.json,\"; echo "\"$(ls *.pdf)\"")
+      ITEMS=$(for f in `find *Executables* -type f | sort`; do echo \"$f\",; done ; echo \"Manifest.json,\"; echo "\"$(ls *.pdf)\"")
       cat Manifest.json |  sed -e s,\<VERSION\>,$GITHUB_HEAD_REF,g | sed -e s,\<RELEASE_DATE\>,$(date +%F),g | sed -e s,\<RELEASE_ITEMS\>,$ITEMS,g > Manifest.json                
       
   - name: Install zip
