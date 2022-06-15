@@ -1,0 +1,13 @@
+{
+	"ProcessorID": "s1_aiop",
+	"Version": "",
+	"ReleaseDate": "2022-06-15",
+	"Mission": "S1",
+	"Level": [
+		"L0"
+	],
+	"Description": "The RS Addon contains the S1 All-In-One-Processor",
+	"ReleaseItems": [
+		<RELEASE_ITEMS>
+	]
+}

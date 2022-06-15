@@ -41,7 +41,13 @@ runs:
     uses: docker://ghcr.io/coprs/reference-system-software:dependencies_pandoc_latex
     with:
       args: -s --resource-path="/github/workspace/${{ env.RS_CORE_FOLDER }}/${{ matrix.component }}/doc" --listings -H /root/.pandoc/listings-setup.tex --table-of-contents --pdf-engine=xelatex --output="${{ steps.gen_filename.outputs.filename }}/${{ steps.gen_filename.outputs.filename }}_Release_Note.pdf" --from=markdown "./${{ env.RS_CORE_FOLDER }}/${{ matrix.component }}/doc/SRN.md"
-  
+    
+  - name: Generate Manifest
+    shell: bash
+    run: |
+      ITEMS=$(for f in `ls -1 executables`; do echo \"$f\",; done ; echo \"Manifest.json,\"; echo "\"$(ls *.pdf)\"")
+      cat Manifest.json |  sed -e s,\<VERSION\>,$GITHUB_HEAD_REF,g | sed -e s,\<RELEASE_DATE\>,$(date +%F),g | sed -e s,\<RELEASE_ITEMS\>,$ITEMS,g > Manifest.json                
+      
   - name: Install zip
     uses: montudor/action-zip@v1
   
