@@ -37,6 +37,26 @@ This software does have the following minimal requirements:
 *These resource requirements are applicable for one worker. There may be many instances of workers, see scaling up workers for more details.
 ** This amount had been used in previous operational S1 environment. The disk size might be lower depending on the products that are processed. This needs to be at least twice of the product size of the biggest product. An additional margin of 10% is recommended however.
 
+# Deployment Prerequisite
+
+Following components of the COPRS shall be installed and running
+- [COPRS Infrastructure](https://github.com/COPRS/infrastructure)
+OBS Buckets, Kubernetes Secrets and ES indices shall be created.
+- See [COPRS OBS Bucket](/processing-common/doc/buckets.md)
+- See [COPRS Kubernetes Secret](/processing-common/doc/secrets.md)
+- See [COPRS Search Controller)(/rs-processing-common)
+
+The RS Addons are also having the component Preparation worker that is persisting existing jobs that are not ready to run (e.g. missing inputs). In order to work correctly it will require MongoDB as persistence layer. For further general information regarding the creation of a secret for the  MongoDB instance, please see [COPRS MongoDB](/processing-common/doc/secrets.md)
+
+The default configuration provided in the RS Core Component is expecting a secret "mongopersistence" in the namespace "processing" containing a field for PASSWORD and USERNAME that can be used in order to authenticate at the MongoDB.
+
+Please note that further initialization might be required. For the Preparation worker component please execute the following commands in the MongoDB in order to create the credentials for the secret:
+``
+db.createUser({user: "<USER>", pwd: "<PASSWORD>", roles: [{ role: "readWrite", db: "coprs" }]})
+db.sequence.insert({_id: "appDataJob",seq: 0});
+``
+
+
 ## Processing Filter
 
 The processing chain is using two different types of filters:
