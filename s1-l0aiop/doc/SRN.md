@@ -56,7 +56,6 @@ db.createUser({user: "<USER>", pwd: "<PASSWORD>", roles: [{ role: "readWrite", d
 db.sequence.insert({_id: "appDataJob",seq: 0});
 ``
 
-
 ## Processing Filter
 
 The processing chain is using two different types of filters:
@@ -73,7 +72,79 @@ The processing chain is using two different types of filters:
 
 ## Preparation Worker
 
-**TBD**
+The preparation worker is used in all Sentinel-1 and Sentinel-3 RS addon processing chains. The configuration is compounded by two different parts: One generic configuration part, where the properties are common between all processing chains, and one type specific part, which is responsible to control the chain specific logic. 
+
+### Generic configuration part
+
+#### MongoDB Connection
+
+| Property | Details |
+|----------|---------|
+| ``app.preparation-worker.mongodb.host`` | Hostname to connect to the MongoDB (default: ``mongodb-0.mongodb-headless.database.svc.cluster.local``) |
+| ``app.preparation-worker.mongodb.port`` | Port to connect to the MongoDB (default: ``27017``) |
+| ``app.preparation-worker.mongodb.database`` | Name of the database to use inside of MongoDB (default: ``coprs``) |
+| ``app.preparation-worker.mongodb.username`` | Username to query and update documents in the MongoDB (default: ``${MONGO_USERNAME}``, Environment variable extracted from the secret ``mongoprepration``) |
+| ``app.preparation-worker.mongodb.password`` | Password for the user to query and update documents in the MongoDB (default: ``${MONGO_PASSWORD}``, Environment variable extracted from the secret ``mongoprepration``) |
+
+#### Metadata Search Controller Connection
+
+| Property | Details |
+|----------|---------|
+| ``app.preparation-worker.metadata.metadataHostname`` | Hostname and port to connect to the search controller (default: ``rs-metadata-catalog-searchcontroller-svc:8080``) |
+| ``app.preparation-worker.metadata.nbretry`` | Number of retries, when a query fails (default: ``3``) |
+| ``app.preparation-worker.metadata.temporetryms`` | Timeout between retries in milliseconds (default: ``1000``) |
+
+#### Process Configuration 
+
+| Property | Details |
+|----------|---------|
+| ``app.preparation-worker.process.level`` | Process level for the preparation worker. Controls level specific logic. For S1 AIOP: ``L0`` |
+| ``app.preparation-worker.process.mode`` | Process mode for the preparation worker. Allowed values: ``PROD``, ``TEST`` (default: ``PROD``) |
+| ``app.preparation-worker.process.hostname`` | Hostname of the preparation worker (default: ``${HOSTNAME}``) |
+| ``app.preparation-worker.process.productType`` | ProductType of main inputs. Used for logging/reporting (default: ``EdrsSession``) |
+| ``app.preparation-worker.process.loglevelstdout`` | LogLevel for stdout of the IPF process wrapped in the execution worker (default: ``INFO``) |
+| ``app.preparation-worker.process.loglevelstderr`` | LogLevel for stderr of the IPF process wrapped in the execution worker (default: ``INFO``) |
+| ``app.preparation-worker.process.processingstation`` | Processing Station (default: ``WILE``) |
+| ``app.preparation-worker.process.params`` | Dynamic processing parameters for the job order. Contains a map of key value pairs |
+| ``app.preparation-worker.process.outputregexps`` | Map to match regular expressions to output file types. Key: output file type, Value: regular expression used for file names |
+
+#### Worker Configuration
+
+| Property | Details |
+|----------|---------|
+| ``app.preparation-worker.worker.diroftasktables`` | Directory, where the tasktables can be found (default: ``/app/tasktables``) |
+| ``app.preparation-worker.worker.maxnboftasktable`` | Number of task tables. For S1 AIOP: ``1`` |
+| ``app.preparation-worker.worker.defaultfamily`` | Default ProductFamily for product types not found in inputfamilies or outputfamilies (default: ``BLANK``) |
+| ``app.preparation-worker.worker.inputfamiliesstr`` | Key-Value pairs of mappings of product types to ProductFamily for input product types |
+| ``app.preparation-worker.worker.outputfamiliesstr`` | Key-Value pairs of mappings of product types to ProductFamily for output product types |
+| ``app.preparation-worker.worker.type-overlap`` | Map of all overlap for different slice types in Sentinel-1 |
+| ``app.preparation-worker.worker.type-slice-length`` | Map of all lengths for different slice types in Sentinel-1 |
+| ``app.preparation-worker.worker.map-type-meta`` | Map for product types to corresponding metadata indexes, if the product type itself is not the same as the index |
+
+#### Tasktable Configuration
+
+| Property | Details |
+|----------|---------|
+| ``app.preparation-worker.tasktable.routingKeyTemplate`` | Template how to match incoming messages onto the routing mapping configured in ``routing``. For S1 AIOP: ``${product.productType}`` |
+| ``app.preparation-worker.tasktable.routing`` | Map to determine tasktable to use for an incoming message, to create new AppDataJobs for the preparation worker |
+
+
+### Product type specific configuration part
+
+#### AIOP Configuration
+
+| Property | Details |
+|----------|---------|
+| ``app.preparation-worker.aiop.station-codes`` | Map for the station codes. Used to compound all map-properties below. |
+| ``app.preparation-worker.aiop.pt-assembly`` | Map for property values for each station code to fill JobOrder Parameter ``PT_Assembly`` |
+| ``app.preparation-worker.aiop.processing-mode`` | Map for property values for each station code to fill JobOrder Parameter ``Processing_Mode`` |
+| ``app.preparation-worker.aiop.reprocessing-mode.`` | Map for property values for each station code to fill JobOrder Parameter ``Reprocessing_Mode`` |
+| ``app.preparation-worker.aiop.timeout-sec`` | Map for property values for each station code to fill JobOrder Parameter ``TimeoutSec`` |
+| ``app.preparation-worker.aiop.descramble`` | Map for property values for each station code to fill JobOrder Parameter ``Descramble`` |
+| ``app.preparation-worker.aiop.rs-encode`` | Map for property values for each station code to fill JobOrder Parameter ``RSEncode`` |
+| ``app.preparation-worker.aiop.minimal-waiting-time-sec`` | Determines how long a job should wait before running into a timeout in seconds (currently not used) (default: ``360000``) |
+| ``app.preparation-worker.aiop.nrt-output-path`` | Value for dynamic processing parameter ``NRTOutputPath`` (default: ``/data/localWD/%WORKING_DIR_NUMBER%/NRT``). ``%WORKING_DIR_NUMER%`` will be replaced by the actual working directory number for the JobOrder |
+| ``app.preparation-worker.aiop.pt-output-path`` | Value for dynamic processing parameter ``PTOutputPath`` (default: ``/data/localWD/%WORKING_DIR_NUMBER%/PT``). ``%WORKING_DIR_NUMER%`` will be replaced by the actual working directory number for the JobOrder |
 
 ## Execution Worker
 
