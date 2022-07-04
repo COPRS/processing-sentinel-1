@@ -37,6 +37,8 @@ This software does have the following minimal requirements:
 *These resource requirements are applicable for one worker. There may be many instances of workers, see scaling up workers for more details.
 ** This amount had been used in previous operational S1 environment. The disk size might be lower depending on the products that are processed. This needs to be at least twice of the product size of the biggest product. An additional margin of 10% is recommended however.
 
+## 
+
 # Deployment Prerequisite
 
 Following components of the COPRS shall be installed and running
@@ -155,6 +157,13 @@ For each priority chain a separate configuration needs to be created. The config
 * app.execution-worker-low
 
 The following description is just given for high priority workers:
+
+### Important SCDF Properties
+
+| Property | Details |
+|----------|---------|
+| ``app.execution-worker-high.spring.cloud.stream.kafka.bindings.input.consumer.configuration.max.poll.records`` | Number of records that are pulled in batch when retrieving new messages for the kafka consumer. Tests have shown, that for reliable processing this property shall be set to ``1`` |
+| ``app.execution-worker-high.spring.cloud.stream.kafka.bindings.input.consumer.configuration.max.poll.interval.ms`` | Number of milliseconds how long the processing of one kafka message shall take, before consumer is kicked from consumer group by the kafka broker. This property is very important for the processing of long-running tasks. |
 
 ### Process Configuration
 
