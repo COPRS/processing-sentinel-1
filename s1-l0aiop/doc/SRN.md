@@ -37,7 +37,11 @@ This software does have the following minimal requirements:
 *These resource requirements are applicable for one worker. There may be many instances of workers, see scaling up workers for more details.
 ** This amount had been used in previous operational S1 environment. The disk size might be lower depending on the products that are processed. This needs to be at least twice of the product size of the biggest product. An additional margin of 10% is recommended however.
 
-## 
+## Additional Resources 
+
+The preparation worker needs the task table for the IPF wrapped inside of the execution worker. To provide the preparation worker with the needed task table, a configmap will be created by the deployment script based on the file ``tasktable_configmap.yaml``. The resulting configmap contains the task table needed for the S1 AIOP preparation worker, in order to create compatible job orders. 
+
+The config map will be created in kubernetes in the processing namespace and will be named ``s1-l0aiop-tasktables``, to be distinguishable from other tasktable configmaps.
 
 # Deployment Prerequisite
 
