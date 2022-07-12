@@ -6,7 +6,7 @@ This add-on contains the configuration for the S1 L1 processing chain and will c
 
 ![overview](./media/overview.png "Overview")
 
-The chain will start from the topic catalog event and watching out for new services there. The message filter will ensure that just segments and related auxiliary files are consumed by the chain. All other product types will be discard and no processing occurs. Just if the request is not filtered it will be send to the Preparation worker. Its major task is to ensure that all required products for a production are available. According to the task table of the ASP it will check if all required auxiliary files can be found in the catalog via the Metadata Search Controller. Additionally it will verify that all required chunks of the session are ingested into the catalog already as well.
+The chain will start from the topic catalog event and watching out for new services there. The message filter will ensure that just segments and related auxiliary files are consumed by the chain. All other product types will be discard and no processing occurs. Just if the request is not filtered it will be send to the Preparation worker. Its major task is to ensure that all required products for a production are available. According to the task table of L1 Processor it will check if all required auxiliary files can be found in the catalog via the Metadata Search Controller. Additionally it will verify that all required chunks of the session are ingested into the catalog already as well.
 
 If the production is not ready yet the request will be persisted and discarded. Once a new relevant product for the chain arrives, it will check again if all required input products are available. When all suitable products are available the job order will be generated and send to the execution worker. Note that after the Preparation Worker there are three chains available that are gated by a priority filter that allows to split the request regarding their priority on different groups of execution workers. This can be used to priorize certain types of request.
 
@@ -39,9 +39,9 @@ This software does have the following minimal requirements:
 
 ## Additional Resources 
 
-The preparation worker needs the task table for the IPF wrapped inside of the execution worker. To provide the preparation worker with the needed task table, a configmap will be created by the deployment script based on the file ``tasktable_configmap.yaml``. The resulting configmap contains the task table needed for the S1 ASP preparation worker, in order to create compatible job orders. 
+The preparation worker needs the task table for the IPF wrapped inside of the execution worker. To provide the preparation worker with the needed task table, a configmap will be created by the deployment script based on the file ``tasktable_configmap.yaml``. The resulting configmap contains the task table needed for the S1 L1 preparation worker, in order to create compatible job orders. 
 
-The config map will be created in kubernetes in the processing namespace and will be named ``s1-l0asp-tasktables``, to be distinguishable from other tasktable configmaps.
+The config map will be created in kubernetes in the processing namespace and will be named ``s1-l1-tasktables``, to be distinguishable from other tasktable configmaps.
 
 # Deployment Prerequisite
 
@@ -104,10 +104,10 @@ The preparation worker is used in all Sentinel-1 and Sentinel-3 RS addon process
 
 | Property | Details |
 |----------|---------|
-| ``app.preparation-worker.process.level`` | Process level for the preparation worker. Controls level specific logic. For S1 ASP: ``L0_SEGMENT`` |
+| ``app.preparation-worker.process.level`` | Process level for the preparation worker. Controls level specific logic. For S1 L1: ``L1`` |
 | ``app.preparation-worker.process.mode`` | Process mode for the preparation worker. Allowed values: ``PROD``, ``TEST`` (default: ``PROD``) |
 | ``app.preparation-worker.process.hostname`` | Hostname of the preparation worker (default: ``${HOSTNAME}``) |
-| ``app.preparation-worker.process.productType`` | ProductType of main inputs. Used for logging/reporting (default: ``L0Segment``) |
+| ``app.preparation-worker.process.productType`` | ProductType of main inputs. Used for logging/reporting (default: ``L0Slice``) |
 | ``app.preparation-worker.process.loglevelstdout`` | LogLevel for stdout of the IPF process wrapped in the execution worker (default: ``INFO``) |
 | ``app.preparation-worker.process.loglevelstderr`` | LogLevel for stderr of the IPF process wrapped in the execution worker (default: ``INFO``) |
 | ``app.preparation-worker.process.processingstation`` | Processing Station (default: ``WILE``) |
@@ -119,7 +119,7 @@ The preparation worker is used in all Sentinel-1 and Sentinel-3 RS addon process
 | Property | Details |
 |----------|---------|
 | ``app.preparation-worker.worker.diroftasktables`` | Directory, where the tasktables can be found (default: ``/app/tasktables``) |
-| ``app.preparation-worker.worker.maxnboftasktable`` | Number of task tables. For S1 AIOP: ``1`` |
+| ``app.preparation-worker.worker.maxnboftasktable`` | Number of task tables. For S1 L1: ``40`` |
 | ``app.preparation-worker.worker.defaultfamily`` | Default ProductFamily for product types not found in inputfamilies or outputfamilies (default: ``BLANK``) |
 | ``app.preparation-worker.worker.inputfamiliesstr`` | Key-Value pairs of mappings of product types to ProductFamily for input product types |
 | ``app.preparation-worker.worker.outputfamiliesstr`` | Key-Value pairs of mappings of product types to ProductFamily for output product types |
@@ -131,20 +131,13 @@ The preparation worker is used in all Sentinel-1 and Sentinel-3 RS addon process
 
 | Property | Details |
 |----------|---------|
-| ``app.preparation-worker.tasktable.routingKeyTemplate`` | Template how to match incoming messages onto the routing mapping configured in ``routing``. For S1 AIOP: ``${product.productType}`` |
+| ``app.preparation-worker.tasktable.routingKeyTemplate`` | Template how to match incoming messages onto the routing mapping configured in ``routing``. For S1 L1: ``$(product.acquistion)_$(product.satelliteId)`` |
 | ``app.preparation-worker.tasktable.routing`` | Map to determine tasktable to use for an incoming message, to create new AppDataJobs for the preparation worker |
 
 
 ### Product type specific configuration part
 
-#### ASP Configuration
-
-| Property | Details |
-|----------|---------|
-| ``app.preparation-worker.l0asp.waiting-time-hours-minimal-fast`` | Timeout configuration. Currently not used. Jobs shall at longest wait for the maximum of sensingStopTime + nominal and jobCreationTime + minimal (default: ``1``) |
-| ``app.preparation-worker.l0asp.waiting-time-hours-nominal-fast`` | Timeout configuration. Currently not used. Jobs shall at longest wait for the maximum of sensingStopTime + nominal and jobCreationTime + minimal (default: ``36``) |
-| ``app.preparation-worker.l0asp.waiting-time-hours-minimal-nrt-pt`` | Timeout configuration. Currently not used. Jobs shall at longest wait for the maximum of sensingStopTime + nominal and jobCreationTime + minimal (default: ``1``) |
-| ``app.preparation-worker.l0asp.waiting-time-hours-nominal-nrt-pt`` | Timeout configuration. Currently not used. Jobs shall at longest wait for the maximum of sensingStopTime + nominal and jobCreationTime + minimal (default: ``36``) |
+For the Sentinel-1 L1 processing chain, no additional product type specific configuration is needed
 
 ## Execution Worker
 
@@ -167,15 +160,15 @@ The following description is just given for high priority workers:
 
 | Property | Details |
 |----------|---------|
-| ``app.execution-worker-high.process.level`` | Process level for the execution worker. Controls level specific logic. For S1 ASP: ``L0_SEGMENT`` |
+| ``app.execution-worker-high.process.level`` | Process level for the execution worker. Controls level specific logic. For S1 L1: ``L1`` |
 | ``app.execution-worker-high.process.hostname`` | Hostname of the execution worker (default: ``${HOSTNAME}``) |
 | ``app.execution-worker-high.process.workingDir`` | Working directory for the execution worker. Location where the currently processed AppDataJob will be saved (default: ``/data/localWD``) |
 | ``app.execution-worker-high.process.tm-proc-stop-s`` | Seconds how long the cleaning of a JobProcessing may take in seconds (default: ``300``) |
 | ``app.execution-worker-high.process.tm-proc-one-task-s`` | Seconds how long one task is allowed to run for in seconds (default: ``600``) |
-| ``app.execution-worker-high.process.tm-proc-all-tasks-s`` | Seconds how long all tasks at sum are allowed to run for in seconds (default: ``7200``) |
-| ``app.execution-worker-high.process.size-batch-upload`` | Number of outputs, that should be uploaded in parallel (default: ``2``) |
+| ``app.execution-worker-high.process.tm-proc-all-tasks-s`` | Seconds how long all tasks at sum are allowed to run for in seconds (default: ``1800``) |
+| ``app.execution-worker-high.process.size-batch-upload`` | Number of outputs, that should be uploaded in parallel (default: ``10``) |
 | ``app.execution-worker-high.process.size-batch-download`` | Number of inputs, that should be downloaded in parallel (default: ``10``) |
-| ``app.execution-worker-high.process.wap-nb-max-loop`` | Number of retries when checking if process is active (default: ``12``) |
+| ``app.execution-worker-high.process.wap-nb-max-loop`` | Number of retries when checking if process is active (default: ``30``) |
 | ``app.execution-worker-high.process.wap-tempo-s`` | Seconds how long to wait between each check if process is active (default: ``10``) |
 | ``app.execution-worker-high.process.threshold-ew`` | Threshold for length to determine if a file is a ghost candidate for polarisation EW (default: ``3``) |
 | ``app.execution-worker-high.process.threshold-iw`` | Threshold for length to determine if a file is a ghost candidate for polarisation IW (default: ``3``) |
