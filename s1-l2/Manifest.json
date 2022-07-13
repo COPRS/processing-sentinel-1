@@ -1,0 +1,13 @@
+{
+	"ProcessorID": "s1_l2",
+	"Version": "<VERSION>",
+	"ReleaseDate": "<RELEASE_DATE>",
+	"Mission": "S1",
+	"Level": [
+		"L2"
+	],
+	"Description": "The RS Addon contains the S1 L2 Processing Chain",
+	"ReleaseItems": [
+		<RELEASE_ITEMS>
+	]
+}
