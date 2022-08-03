@@ -6,17 +6,17 @@ metadata:
 
 data:
   EW_RAW__0_OCN__2.xml: |
-    <?xml version="1.0" encoding="UTF-8"?>
+    <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>EW_RAW__0_OCN__2</Processor_Name>
-      <Version>3.31</Version>
+      <Version>3.52</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">25000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.31</Version>
+          <Version>3.52</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -68,14 +68,14 @@ data:
         </Dyn_ProcParam>
       </List_of_Dyn_ProcParam>
       <Sensing_Time_flag>true</Sensing_Time_flag>
-      <List_of_Pools count="7">
+      <List_of_Pools count="6">
         <Pool>
           <Detached>false</Detached>
           <Killing_Signal>15</Killing_Signal>
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.31</Version>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -272,8 +272,7 @@ data:
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
+              <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>1</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
@@ -284,21 +283,16 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>MDC</Name>
-              <Version>3.31</Version>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/MDC_MultiSwathDopMain</File_Name>
               <List_of_Inputs count="5">
-                <Input ref="AUX_PP1">
-                </Input>
-                <Input ref="AUX_CAL">
-                </Input>
-                <Input ref="AUX_INS">
-                </Input>
-                <Input ref="Orbit">
-                </Input>
-                <Input ref="AUX_ATT">
-                </Input>
+                <Input ref="AUX_PP1"/>
+                <Input ref="AUX_CAL"/>
+                <Input ref="AUX_INS"/>
+                <Input ref="Orbit"/>
+                <Input ref="AUX_ATT"/>
               </List_of_Inputs>
               <List_of_Outputs count="1">
                 <Output>
@@ -308,8 +302,7 @@ data:
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
+              <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>2</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
@@ -320,21 +313,16 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WPC</Name>
-              <Version>3.31</Version>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WPC_ProcMain</File_Name>
               <List_of_Inputs count="5">
-                <Input ref="AUX_PP1">
-                </Input>
-                <Input ref="AUX_CAL">
-                </Input>
-                <Input ref="AUX_INS">
-                </Input>
-                <Input ref="Orbit">
-                </Input>
-                <Input ref="AUX_ATT">
-                </Input>
+                <Input ref="AUX_PP1"/>
+                <Input ref="AUX_CAL"/>
+                <Input ref="AUX_INS"/>
+                <Input ref="Orbit"/>
+                <Input ref="AUX_ATT"/>
               </List_of_Inputs>
               <List_of_Outputs count="1">
                 <Output>
@@ -344,8 +332,7 @@ data:
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
+              <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>12</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
@@ -356,7 +343,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.31</Version>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -376,16 +363,11 @@ data:
                     </Alternative>
                   </List_of_Alternatives>
                 </Input>
-                <Input ref="AUX_PP1">
-                </Input>
-                <Input ref="AUX_CAL">
-                </Input>
-                <Input ref="AUX_INS">
-                </Input>
-                <Input ref="Orbit">
-                </Input>
-                <Input ref="AUX_ATT">
-                </Input>
+                <Input ref="AUX_PP1"/>
+                <Input ref="AUX_CAL"/>
+                <Input ref="AUX_INS"/>
+                <Input ref="Orbit"/>
+                <Input ref="AUX_ATT"/>
               </List_of_Inputs>
               <List_of_Outputs count="1">
                 <Output>
@@ -395,8 +377,7 @@ data:
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
+              <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>12</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
@@ -407,23 +388,17 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC2</Name>
-              <Version>3.31</Version>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC2_ProcMain.sh</File_Name>
               <List_of_Inputs count="6">
-                <Input ref="SL2">
-                </Input>
-                <Input ref="AUX_PP1">
-                </Input>
-                <Input ref="AUX_CAL">
-                </Input>
-                <Input ref="AUX_INS">
-                </Input>
-                <Input ref="Orbit">
-                </Input>
-                <Input ref="AUX_ATT">
-                </Input>
+                <Input ref="SL2"/>
+                <Input ref="AUX_PP1"/>
+                <Input ref="AUX_CAL"/>
+                <Input ref="AUX_INS"/>
+                <Input ref="Orbit"/>
+                <Input ref="AUX_ATT"/>
               </List_of_Inputs>
               <List_of_Outputs count="1">
                 <Output>
@@ -433,8 +408,7 @@ data:
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
+              <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>12</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
@@ -445,13 +419,12 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LOP</Name>
-              <Version>3.31</Version>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LOP_ProcMain</File_Name>
               <List_of_Inputs count="7">
-                <Input ref="SL2">
-                </Input>
+                <Input ref="SL2"/>
                 <Input>
                   <Mode>ALWAYS</Mode>
                   <Mandatory>Yes</Mandatory>
@@ -557,8 +530,7 @@ data:
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
+              <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>12</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
@@ -568,57 +540,76 @@ data:
           <Killing_Signal>15</Killing_Signal>
           <List_of_Tasks count="1">
             <Task>
-              <Name>stats</Name>
-              <Version>3.20</Version>
+              <Name>ProcEND</Name>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
-              <File_Name>/usr/local/components/S1IPF/bin/stats.sh</File_Name>
-              <List_of_Inputs count="5">
-                <Input ref="AUX_PP1">
+              <File_Name>/usr/local/components/S1IPF/bin/IPF_ProcEND</File_Name>
+              <List_of_Inputs count="2">
+                <Input>
+                  <Mode>ALWAYS</Mode>
+                  <Mandatory>Yes</Mandatory>
+                  <List_of_Alternatives count="1">
+                    <Alternative>
+                      <Order>1</Order>
+                      <Origin>PROC</Origin>
+                      <Retrieval_Mode>LatestValCover</Retrieval_Mode>
+                      <T0>0.0</T0>
+                      <T1>0.0</T1>
+                      <File_Type>EW_OCN__2S</File_Type>
+                      <File_Name_Type>Regexp</File_Name_Type>
+                    </Alternative>
+                  </List_of_Alternatives>
                 </Input>
-                <Input ref="AUX_CAL">
-                </Input>
-                <Input ref="AUX_INS">
-                </Input>
-                <Input ref="Orbit">
-                </Input>
-                <Input ref="AUX_ATT">
+                <Input>
+                  <Mode>ALWAYS</Mode>
+                  <Mandatory>Yes</Mandatory>
+                  <List_of_Alternatives count="1">
+                    <Alternative>
+                      <Order>1</Order>
+                      <Origin>PROC</Origin>
+                      <Retrieval_Mode>LatestValCover</Retrieval_Mode>
+                      <T0>0.0</T0>
+                      <T1>0.0</T1>
+                      <File_Type>EW_OCN__2A</File_Type>
+                      <File_Name_Type>Regexp</File_Name_Type>
+                    </Alternative>
+                  </List_of_Alternatives>
                 </Input>
               </List_of_Inputs>
               <List_of_Outputs count="2">
                 <Output>
                   <Destination>DB</Destination>
                   <Mandatory>Yes</Mandatory>
-                  <Type>EW_OCN__2S</Type>
+                  <Type>LIST</Type>
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
                 <Output>
                   <Destination>DB</Destination>
-                  <Mandatory>Yes</Mandatory>
-                  <Type>report</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <Mandatory>No</Mandatory>
+                  <Type>RPT</Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
-              <Number_of_CPUs>12</Number_of_CPUs>
+              <List_of_Breakpoints count="0"/>
+              <Number_of_CPUs>1</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
         </Pool>
       </List_of_Pools>
     </Ipf_Task_Table>
   IW_RAW__0_OCN__2.xml: |
-    <?xml version="1.0" encoding="UTF-8"?>
+    <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>IW_RAW__0_OCN__2</Processor_Name>
-      <Version>3.31</Version>
+      <Version>3.52</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">33000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.31</Version>
+          <Version>3.52</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -670,14 +661,14 @@ data:
         </Dyn_ProcParam>
       </List_of_Dyn_ProcParam>
       <Sensing_Time_flag>true</Sensing_Time_flag>
-      <List_of_Pools count="7">
+      <List_of_Pools count="6">
         <Pool>
           <Detached>false</Detached>
           <Killing_Signal>15</Killing_Signal>
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.31</Version>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -874,8 +865,7 @@ data:
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
+              <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>1</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
@@ -886,21 +876,16 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>MDC</Name>
-              <Version>3.31</Version>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/MDC_MultiSwathDopMain</File_Name>
               <List_of_Inputs count="5">
-                <Input ref="AUX_PP1">
-                </Input>
-                <Input ref="AUX_CAL">
-                </Input>
-                <Input ref="AUX_INS">
-                </Input>
-                <Input ref="Orbit">
-                </Input>
-                <Input ref="AUX_ATT">
-                </Input>
+                <Input ref="AUX_PP1"/>
+                <Input ref="AUX_CAL"/>
+                <Input ref="AUX_INS"/>
+                <Input ref="Orbit"/>
+                <Input ref="AUX_ATT"/>
               </List_of_Inputs>
               <List_of_Outputs count="1">
                 <Output>
@@ -910,8 +895,7 @@ data:
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
+              <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>2</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
@@ -922,21 +906,16 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WPC</Name>
-              <Version>3.31</Version>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WPC_ProcMain</File_Name>
               <List_of_Inputs count="5">
-                <Input ref="AUX_PP1">
-                </Input>
-                <Input ref="AUX_CAL">
-                </Input>
-                <Input ref="AUX_INS">
-                </Input>
-                <Input ref="Orbit">
-                </Input>
-                <Input ref="AUX_ATT">
-                </Input>
+                <Input ref="AUX_PP1"/>
+                <Input ref="AUX_CAL"/>
+                <Input ref="AUX_INS"/>
+                <Input ref="Orbit"/>
+                <Input ref="AUX_ATT"/>
               </List_of_Inputs>
               <List_of_Outputs count="1">
                 <Output>
@@ -946,8 +925,7 @@ data:
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
+              <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>12</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
@@ -958,7 +936,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.31</Version>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -978,16 +956,11 @@ data:
                     </Alternative>
                   </List_of_Alternatives>
                 </Input>
-                <Input ref="AUX_PP1">
-                </Input>
-                <Input ref="AUX_CAL">
-                </Input>
-                <Input ref="AUX_INS">
-                </Input>
-                <Input ref="Orbit">
-                </Input>
-                <Input ref="AUX_ATT">
-                </Input>
+                <Input ref="AUX_PP1"/>
+                <Input ref="AUX_CAL"/>
+                <Input ref="AUX_INS"/>
+                <Input ref="Orbit"/>
+                <Input ref="AUX_ATT"/>
               </List_of_Inputs>
               <List_of_Outputs count="1">
                 <Output>
@@ -997,8 +970,7 @@ data:
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
+              <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>12</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
@@ -1009,23 +981,17 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC2</Name>
-              <Version>3.31</Version>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC2_ProcMain.sh</File_Name>
               <List_of_Inputs count="6">
-                <Input ref="SL2">
-                </Input>
-                <Input ref="AUX_PP1">
-                </Input>
-                <Input ref="AUX_CAL">
-                </Input>
-                <Input ref="AUX_INS">
-                </Input>
-                <Input ref="Orbit">
-                </Input>
-                <Input ref="AUX_ATT">
-                </Input>
+                <Input ref="SL2"/>
+                <Input ref="AUX_PP1"/>
+                <Input ref="AUX_CAL"/>
+                <Input ref="AUX_INS"/>
+                <Input ref="Orbit"/>
+                <Input ref="AUX_ATT"/>
               </List_of_Inputs>
               <List_of_Outputs count="1">
                 <Output>
@@ -1035,8 +1001,7 @@ data:
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
+              <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>12</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
@@ -1047,13 +1012,12 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LOP</Name>
-              <Version>3.31</Version>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LOP_ProcMain</File_Name>
               <List_of_Inputs count="7">
-                <Input ref="SL2">
-                </Input>
+                <Input ref="SL2"/>
                 <Input>
                   <Mode>ALWAYS</Mode>
                   <Mandatory>Yes</Mandatory>
@@ -1159,8 +1123,7 @@ data:
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
+              <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>12</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
@@ -1170,57 +1133,76 @@ data:
           <Killing_Signal>15</Killing_Signal>
           <List_of_Tasks count="1">
             <Task>
-              <Name>stats</Name>
-              <Version>3.20</Version>
+              <Name>ProcEND</Name>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
-              <File_Name>/usr/local/components/S1IPF/bin/stats.sh</File_Name>
-              <List_of_Inputs count="5">
-                <Input ref="AUX_PP1">
+              <File_Name>/usr/local/components/S1IPF/bin/IPF_ProcEND</File_Name>
+              <List_of_Inputs count="2">
+                <Input>
+                  <Mode>ALWAYS</Mode>
+                  <Mandatory>Yes</Mandatory>
+                  <List_of_Alternatives count="1">
+                    <Alternative>
+                      <Order>1</Order>
+                      <Origin>PROC</Origin>
+                      <Retrieval_Mode>LatestValCover</Retrieval_Mode>
+                      <T0>0.0</T0>
+                      <T1>0.0</T1>
+                      <File_Type>EW_OCN__2S</File_Type>
+                      <File_Name_Type>Regexp</File_Name_Type>
+                    </Alternative>
+                  </List_of_Alternatives>
                 </Input>
-                <Input ref="AUX_CAL">
-                </Input>
-                <Input ref="AUX_INS">
-                </Input>
-                <Input ref="Orbit">
-                </Input>
-                <Input ref="AUX_ATT">
+                <Input>
+                  <Mode>ALWAYS</Mode>
+                  <Mandatory>Yes</Mandatory>
+                  <List_of_Alternatives count="1">
+                    <Alternative>
+                      <Order>1</Order>
+                      <Origin>PROC</Origin>
+                      <Retrieval_Mode>LatestValCover</Retrieval_Mode>
+                      <T0>0.0</T0>
+                      <T1>0.0</T1>
+                      <File_Type>EW_OCN__2A</File_Type>
+                      <File_Name_Type>Regexp</File_Name_Type>
+                    </Alternative>
+                  </List_of_Alternatives>
                 </Input>
               </List_of_Inputs>
               <List_of_Outputs count="2">
                 <Output>
                   <Destination>DB</Destination>
                   <Mandatory>Yes</Mandatory>
-                  <Type>IW_OCN__2S</Type>
+                  <Type>LIST</Type>
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
                 <Output>
                   <Destination>DB</Destination>
-                  <Mandatory>Yes</Mandatory>
-                  <Type>report</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <Mandatory>No</Mandatory>
+                  <Type>RPT</Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
-              <Number_of_CPUs>12</Number_of_CPUs>
+              <List_of_Breakpoints count="0"/>
+              <Number_of_CPUs>1</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
         </Pool>
       </List_of_Pools>
     </Ipf_Task_Table>
   SM_RAW__0_OCN__2.xml: |
-    <?xml version="1.0" encoding="UTF-8"?>
+    <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>SM_RAW__0_OCN__2</Processor_Name>
-      <Version>3.31</Version>
+      <Version>3.52</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">41000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.31</Version>
+          <Version>3.52</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -1272,14 +1254,14 @@ data:
         </Dyn_ProcParam>
       </List_of_Dyn_ProcParam>
       <Sensing_Time_flag>true</Sensing_Time_flag>
-      <List_of_Pools count="7">
+      <List_of_Pools count="6">
         <Pool>
           <Detached>false</Detached>
           <Killing_Signal>15</Killing_Signal>
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.31</Version>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -1476,8 +1458,7 @@ data:
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
+              <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>1</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
@@ -1488,21 +1469,16 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SDC</Name>
-              <Version>3.31</Version>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SDC_SingleSwathDopMain</File_Name>
               <List_of_Inputs count="5">
-                <Input ref="AUX_PP1">
-                </Input>
-                <Input ref="AUX_CAL">
-                </Input>
-                <Input ref="AUX_INS">
-                </Input>
-                <Input ref="Orbit">
-                </Input>
-                <Input ref="AUX_ATT">
-                </Input>
+                <Input ref="AUX_PP1"/>
+                <Input ref="AUX_CAL"/>
+                <Input ref="AUX_INS"/>
+                <Input ref="Orbit"/>
+                <Input ref="AUX_ATT"/>
               </List_of_Inputs>
               <List_of_Outputs count="1">
                 <Output>
@@ -1512,8 +1488,7 @@ data:
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
+              <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>2</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
@@ -1524,21 +1499,16 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SBE</Name>
-              <Version>3.31</Version>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SBE_CntSceMain</File_Name>
               <List_of_Inputs count="5">
-                <Input ref="AUX_PP1">
-                </Input>
-                <Input ref="AUX_CAL">
-                </Input>
-                <Input ref="AUX_INS">
-                </Input>
-                <Input ref="Orbit">
-                </Input>
-                <Input ref="AUX_ATT">
-                </Input>
+                <Input ref="AUX_PP1"/>
+                <Input ref="AUX_CAL"/>
+                <Input ref="AUX_INS"/>
+                <Input ref="Orbit"/>
+                <Input ref="AUX_ATT"/>
               </List_of_Inputs>
               <List_of_Outputs count="1">
                 <Output>
@@ -1548,8 +1518,7 @@ data:
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
+              <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>12</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
@@ -1560,7 +1529,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.31</Version>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -1580,16 +1549,11 @@ data:
                     </Alternative>
                   </List_of_Alternatives>
                 </Input>
-                <Input ref="AUX_PP1">
-                </Input>
-                <Input ref="AUX_CAL">
-                </Input>
-                <Input ref="AUX_INS">
-                </Input>
-                <Input ref="Orbit">
-                </Input>
-                <Input ref="AUX_ATT">
-                </Input>
+                <Input ref="AUX_PP1"/>
+                <Input ref="AUX_CAL"/>
+                <Input ref="AUX_INS"/>
+                <Input ref="Orbit"/>
+                <Input ref="AUX_ATT"/>
               </List_of_Inputs>
               <List_of_Outputs count="1">
                 <Output>
@@ -1599,8 +1563,7 @@ data:
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
+              <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>12</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
@@ -1611,23 +1574,17 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC2</Name>
-              <Version>3.31</Version>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC2_ProcMain.sh</File_Name>
               <List_of_Inputs count="6">
-                <Input ref="SL2">
-                </Input>
-                <Input ref="AUX_PP1">
-                </Input>
-                <Input ref="AUX_CAL">
-                </Input>
-                <Input ref="AUX_INS">
-                </Input>
-                <Input ref="Orbit">
-                </Input>
-                <Input ref="AUX_ATT">
-                </Input>
+                <Input ref="SL2"/>
+                <Input ref="AUX_PP1"/>
+                <Input ref="AUX_CAL"/>
+                <Input ref="AUX_INS"/>
+                <Input ref="Orbit"/>
+                <Input ref="AUX_ATT"/>
               </List_of_Inputs>
               <List_of_Outputs count="1">
                 <Output>
@@ -1637,8 +1594,7 @@ data:
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
+              <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>12</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
@@ -1649,13 +1605,12 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LOP</Name>
-              <Version>3.31</Version>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LOP_ProcMain</File_Name>
               <List_of_Inputs count="8">
-                <Input ref="SL2">
-                </Input>
+                <Input ref="SL2"/>
                 <Input>
                   <Mode>ALWAYS</Mode>
                   <Mandatory>Yes</Mandatory>
@@ -1767,17 +1722,16 @@ data:
                   <Destination>DB</Destination>
                   <Mandatory>Yes</Mandatory>
                   <Type>SM_OCN__2S</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
                 <Output>
                   <Destination>DB</Destination>
                   <Mandatory>No</Mandatory>
                   <Type>SM_OCN__2A</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
+              <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>12</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
@@ -1787,57 +1741,76 @@ data:
           <Killing_Signal>15</Killing_Signal>
           <List_of_Tasks count="1">
             <Task>
-              <Name>stats</Name>
-              <Version>3.20</Version>
+              <Name>ProcEND</Name>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
-              <File_Name>/usr/local/components/S1IPF/bin/stats.sh</File_Name>
-              <List_of_Inputs count="5">
-                <Input ref="AUX_PP1">
+              <File_Name>/usr/local/components/S1IPF/bin/IPF_ProcEND</File_Name>
+              <List_of_Inputs count="2">
+                <Input>
+                  <Mode>ALWAYS</Mode>
+                  <Mandatory>Yes</Mandatory>
+                  <List_of_Alternatives count="1">
+                    <Alternative>
+                      <Order>1</Order>
+                      <Origin>PROC</Origin>
+                      <Retrieval_Mode>LatestValCover</Retrieval_Mode>
+                      <T0>0.0</T0>
+                      <T1>0.0</T1>
+                      <File_Type>EW_OCN__2S</File_Type>
+                      <File_Name_Type>Regexp</File_Name_Type>
+                    </Alternative>
+                  </List_of_Alternatives>
                 </Input>
-                <Input ref="AUX_CAL">
-                </Input>
-                <Input ref="AUX_INS">
-                </Input>
-                <Input ref="Orbit">
-                </Input>
-                <Input ref="AUX_ATT">
+                <Input>
+                  <Mode>ALWAYS</Mode>
+                  <Mandatory>Yes</Mandatory>
+                  <List_of_Alternatives count="1">
+                    <Alternative>
+                      <Order>1</Order>
+                      <Origin>PROC</Origin>
+                      <Retrieval_Mode>LatestValCover</Retrieval_Mode>
+                      <T0>0.0</T0>
+                      <T1>0.0</T1>
+                      <File_Type>EW_OCN__2A</File_Type>
+                      <File_Name_Type>Regexp</File_Name_Type>
+                    </Alternative>
+                  </List_of_Alternatives>
                 </Input>
               </List_of_Inputs>
               <List_of_Outputs count="2">
                 <Output>
                   <Destination>DB</Destination>
                   <Mandatory>Yes</Mandatory>
-                  <Type>SM_OCN__2S</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <Type>LIST</Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
                 <Output>
                   <Destination>DB</Destination>
-                  <Mandatory>Yes</Mandatory>
-                  <Type>report</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <Mandatory>No</Mandatory>
+                  <Type>RPT</Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
-              <Number_of_CPUs>12</Number_of_CPUs>
+              <List_of_Breakpoints count="0"/>
+              <Number_of_CPUs>1</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
         </Pool>
       </List_of_Pools>
     </Ipf_Task_Table>
   WV_RAW__0_OCN__2.xml: |
-    <?xml version="1.0" encoding="UTF-8"?>
+    <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>WV_RAW__0_OCN__2</Processor_Name>
-      <Version>3.31</Version>
+      <Version>3.52</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">7200</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.31</Version>
+          <Version>3.52</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -1889,14 +1862,14 @@ data:
         </Dyn_ProcParam>
       </List_of_Dyn_ProcParam>
       <Sensing_Time_flag>true</Sensing_Time_flag>
-      <List_of_Pools count="5">
+      <List_of_Pools count="4">
         <Pool>
           <Detached>false</Detached>
           <Killing_Signal>15</Killing_Signal>
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.31</Version>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -2048,8 +2021,7 @@ data:
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
+              <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>1</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
@@ -2060,21 +2032,16 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WVP</Name>
-              <Version>3.31</Version>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WVP_WaveProcessMain</File_Name>
               <List_of_Inputs count="5">
-                <Input ref="AUX_PP1">
-                </Input>
-                <Input ref="AUX_CAL">
-                </Input>
-                <Input ref="AUX_INS">
-                </Input>
-                <Input ref="Orbit">
-                </Input>
-                <Input ref="AUX_ATT">
-                </Input>
+                <Input ref="AUX_PP1"/>
+                <Input ref="AUX_CAL"/>
+                <Input ref="AUX_INS"/>
+                <Input ref="Orbit"/>
+                <Input ref="AUX_ATT"/>
               </List_of_Inputs>
               <List_of_Outputs count="1">
                 <Output>
@@ -2084,8 +2051,7 @@ data:
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
+              <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>12</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
@@ -2096,7 +2062,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.31</Version>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -2116,16 +2082,11 @@ data:
                     </Alternative>
                   </List_of_Alternatives>
                 </Input>
-                <Input ref="AUX_PP1">
-                </Input>
-                <Input ref="AUX_CAL">
-                </Input>
-                <Input ref="AUX_INS">
-                </Input>
-                <Input ref="Orbit">
-                </Input>
-                <Input ref="AUX_ATT">
-                </Input>
+                <Input ref="AUX_PP1"/>
+                <Input ref="AUX_CAL"/>
+                <Input ref="AUX_INS"/>
+                <Input ref="Orbit"/>
+                <Input ref="AUX_ATT"/>
               </List_of_Inputs>
               <List_of_Outputs count="1">
                 <Output>
@@ -2135,8 +2096,7 @@ data:
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
+              <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>12</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
@@ -2147,13 +2107,12 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LOP</Name>
-              <Version>3.31</Version>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LOP_ProcMain</File_Name>
               <List_of_Inputs count="7">
-                <Input ref="SL2">
-                </Input>
+                <Input ref="SL2"/>
                 <Input>
                   <Mode>ALWAYS</Mode>
                   <Mandatory>Yes</Mandatory>
@@ -2259,8 +2218,7 @@ data:
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
+              <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>12</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
@@ -2270,43 +2228,61 @@ data:
           <Killing_Signal>15</Killing_Signal>
           <List_of_Tasks count="1">
             <Task>
-              <Name>stats</Name>
-              <Version>3.20</Version>
+              <Name>ProcEND</Name>
+              <Version>3.52</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
-              <File_Name>/usr/local/components/S1IPF/bin/stats.sh</File_Name>
-              <List_of_Inputs count="5">
-                <Input ref="AUX_PP1">
+              <File_Name>/usr/local/components/S1IPF/bin/IPF_ProcEND</File_Name>
+              <List_of_Inputs count="2">
+                <Input>
+                  <Mode>ALWAYS</Mode>
+                  <Mandatory>Yes</Mandatory>
+                  <List_of_Alternatives count="1">
+                    <Alternative>
+                      <Order>1</Order>
+                      <Origin>PROC</Origin>
+                      <Retrieval_Mode>LatestValCover</Retrieval_Mode>
+                      <T0>0.0</T0>
+                      <T1>0.0</T1>
+                      <File_Type>EW_OCN__2S</File_Type>
+                      <File_Name_Type>Regexp</File_Name_Type>
+                    </Alternative>
+                  </List_of_Alternatives>
                 </Input>
-                <Input ref="AUX_CAL">
-                </Input>
-                <Input ref="AUX_INS">
-                </Input>
-                <Input ref="Orbit">
-                </Input>
-                <Input ref="AUX_ATT">
+                <Input>
+                  <Mode>ALWAYS</Mode>
+                  <Mandatory>Yes</Mandatory>
+                  <List_of_Alternatives count="1">
+                    <Alternative>
+                      <Order>1</Order>
+                      <Origin>PROC</Origin>
+                      <Retrieval_Mode>LatestValCover</Retrieval_Mode>
+                      <T0>0.0</T0>
+                      <T1>0.0</T1>
+                      <File_Type>EW_OCN__2A</File_Type>
+                      <File_Name_Type>Regexp</File_Name_Type>
+                    </Alternative>
+                  </List_of_Alternatives>
                 </Input>
               </List_of_Inputs>
               <List_of_Outputs count="2">
                 <Output>
                   <Destination>DB</Destination>
                   <Mandatory>Yes</Mandatory>
-                  <Type>WV_OCN__2S</Type>
+                  <Type>LIST</Type>
                   <File_Name_Type>Directory</File_Name_Type>
                 </Output>
                 <Output>
                   <Destination>DB</Destination>
-                  <Mandatory>Yes</Mandatory>
-                  <Type>report</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <Mandatory>No</Mandatory>
+                  <Type>RPT</Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
-              <List_of_Breakpoints count="0">
-              </List_of_Breakpoints>
-              <Number_of_CPUs>12</Number_of_CPUs>
+              <List_of_Breakpoints count="0"/>
+              <Number_of_CPUs>1</Number_of_CPUs>
             </Task>
           </List_of_Tasks>
         </Pool>
       </List_of_Pools>
     </Ipf_Task_Table>
-    
