@@ -89,7 +89,7 @@ ansible-playbook deploy-rs-addon.yaml \
 ansible-playbook deploy-rs-addon.yaml \
     -i inventory/mycluster/hosts.ini \
     -e rs_addon_location=https://artifactory.coprs.esa-copernicus.eu/artifactory/rs-docker-local/rs-addons/s1/RS_ADDON_S1-L2_<VERSION>.zip \
-    -e stream_name=S1_L0AIOP
+    -e stream_name=S1_L2
 ```
 
 For further information on using the deployment script, please consult its [manual](https://github.com/COPRS/infrastructure/blob/e642b4e78782b3e5d649570e4a72b27cb42efeed/doc/how-to/RS%20Add-on%20-%20RS%20Core.md).
