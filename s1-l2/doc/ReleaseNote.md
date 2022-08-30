@@ -1,10 +1,22 @@
 :arrow_heading_up: Go back to the [Reference System Software repository](https://github.com/COPRS/reference-system-software) :arrow_heading_up:
 
-# RS Add-on - S1 L2
+# RS Add-on S1 L2
+ 
+ * [RS Add-on S1 L2](#rs-add-on-s1-l2)
+    * [Overview](#overview)
+    * [Requirements](#requirements)
+    * [Additional Resources](#additional-resources)
+    * [Deployment Prerequisite](#deployment-prerequisite)
+    * [Processing Filter](#processing-filter)
+    * [Preparation Worker](#preparation-worker)
+    * [Execution Worker](#execution-worker)
+    * [Generic configuration part](#generic-configuration-part)
+    * [Deployer Properties](#deployer-properties)
+
+## Overview
 
 This add-on contains the configuration for the S1 L2 processing chain and will consume the slices from the ASP in order to create L2 products.
 
-## General
 
 ![overview](./media/overview.png "Overview")
 
