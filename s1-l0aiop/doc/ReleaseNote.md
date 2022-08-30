@@ -1,10 +1,19 @@
 :arrow_heading_up: Go back to the [Reference System Software repository](https://github.com/COPRS/reference-system-software) :arrow_heading_up:
 
-# RS Add-on - S1 L0 AIOP
+# RS Add-on S1 L0 AIOP
+ 
+ * [RS Add-on S1 L0 AIOP](#rs-add-on-s1-l0-aiop)
+    * [Overview](#overview)
+    * [Requirements](#requirements)
+    * [Additional Resources](#additional-resources)
+    * [Deployment Prerequisite](#deployment-prerequisite)
+    * [Processing Filter](#processing-filter)
+    * [Preparation Worker](#preparation-worker)
+    * [Execution Worker](#execution-worker)
+    * [Generic configuration part](#generic-configuration-part)
+    * [Deployer Properties](#deployer-properties)
 
-This add-on contains the configuration for the S1 L0 AIOP processing chain and will consume the S1 EDRS Sessions that are ingested into the system in order to create the input for the S1 L0 ASP processing chain.
-
-## General
+## Overview
 
 ![overview](./media/overview.png "Overview")
 
@@ -36,7 +45,7 @@ This software does have the following minimal requirements:
 | Affinity between Pod / Node | N/A         |
 |                             |             |
 
-*These resource requirements are applicable for one worker. There may be many instances of workers, see scaling up workers for more details.
+* These resource requirements are applicable for one worker. There may be many instances of workers, see scaling up workers for more details.
 ** This amount had been used in previous operational S1 environment. The disk size might be lower depending on the products that are processed. This needs to be at least twice of the product size of the biggest product. An additional margin of 10% is recommended however.
 
 ## Additional Resources 
@@ -77,6 +86,10 @@ The processing chain is using two different types of filters:
 |``app.priority-filter-high.filter.function.expression``| A [SpEL](https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/expressions.html) expression defining what request are supposed to be handled by the high priority chain. E.g. handling all S1 events with FAST24 timeliness: ``payload.timeliness == 'PT'``| 
 |``app.priority-filter-medium.filter.function.expression``| A [SpEL](https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/expressions.html) expression defining what request are supposed to be handled by the medium priority chain. E.g. handling all S1 events with NRT timeliness. ``payload.timeliness == 'NRT'``| 
 |``app.priority-filter-low.filter.function.expression``|  [SpEL](https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/expressions.html) expression defining what request are supposed to be handled by the low priority chain. E.g. handling all events that are not having a timeliness: ``(payload.timeliness != 'PT') && (payload.timeliness != 'NRT')``| 
+
+## Preparation Worker
+
+The preparation worker is used in all Sentinel-1 and Sentinel-3 RS addon processing chains. The configuration is compounded by two different parts: One generic configuration part, where the properties are common between all processing chains, and one type specific part, which is responsible to control the chain specific logic. 
 
 ## Preparation Worker
 
