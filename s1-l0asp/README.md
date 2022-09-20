@@ -1,4 +1,4 @@
-:arrow_heading_up: Go back to the  [Overview of RS Add-ons S1](..) :arrow_heading_up:
+:arrow_heading_up: Go back to the [Processing Sentinel-1 Repository](../README.md) :arrow_heading_up:
 
 # RS Add-on - Sentinel-1 ASP processing chain
 
