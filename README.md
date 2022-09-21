@@ -1,30 +1,12 @@
-# production-sentinel1
-
 :arrow_heading_up: Go back to the [Reference System Software repository](https://github.com/COPRS/reference-system-software) :arrow_heading_up:
 
-# Installation Manual
-
-## Acroynms
-
-| Abbreviation | Definition |
-|---|---|
-| AIOP | All-In-One-Processor |
-| ASP | Assembling Slicing Processor |
-| COPRS | Copernicus Reference System |
-| CPU | Central Processing Unit
-| DB | Database |
-| EDRS | European Data Relay Satellite |
-| IPF | Instrument Processing Facility |
-| L0 | Level-0 |
-| L1 | Level-1 |
-| L2| Level-2|
-| RAM | Random Access Memory |
-| RS | Reference System |
-| S1 | Sentinel-1 |
-| SCDF | Spring Cloud Dataflow |
-| SpEL | Sprint Expression Language |
-| OBS | Object Storage |
-
+# Processing Sentinel-1
+* [Processing Sentinel 1](#processing-sentinel-1)  
+  * [Overview](#overview)
+  * [Available RS Addons](#available-rs-addons)
+  * [Dependencies](#dependencies)
+  * [Deployment](#deployment)
+  * [Acroynms](#acroynms)
 
 
 ## Overview
@@ -37,6 +19,7 @@ The following figure provides an overview about how the different RS Add-ons are
 
 The S1 AIOP processor consumes EDRS Sessions are producing L0 Segment files from it. The S1 ASP is using these segments to produce L0 Slices from it. The S1 L1 and L2 processor are using these slices to produce higher level products.
 
+## Available RS Addons
 The following individual processing chains are available:
 * [S1 AIOP](./s1-l0aiop/doc/ReleaseNote.md)
 * [S1 ASP](./s1-l0asp/doc/ReleaseNote.md)
@@ -67,29 +50,52 @@ In order to deploy a RS Add-on the Ansible scripts from the [infrastructure repo
 ```
 ansible-playbook deploy-rs-addon.yaml \
     -i inventory/mycluster/hosts.ini \
-    -e rs_addon_location=https://artifactory.coprs.esa-copernicus.eu/artifactory/rs-docker-local/rs-addons/s1/RS_ADDON_S1-L0ASP_<VERSION>.zip \
+    -e rs_addon_location=https://artifactory.coprs.esa-copernicus.eu/artifactory/rs-zip-private/rs-addons/s1/RS_ADDON_S1-L0ASP_<VERSION>.zip \
     -e stream_name=S1_L0ASP
 ```
 
 ```
 ansible-playbook deploy-rs-addon.yaml \
     -i inventory/mycluster/hosts.ini \
-    -e rs_addon_location=https://artifactory.coprs.esa-copernicus.eu/artifactory/rs-docker-local/rs-addons/s1/RS_ADDON_S1-L0AIOP_<VERSION>.zip \
+    -e rs_addon_location=https://artifactory.coprs.esa-copernicus.eu/artifactory/rs-zip-private/rs-addons/s1/RS_ADDON_S1-L0AIOP_<VERSION>.zip \
     -e stream_name=S1_L0AIOP
 ```
 
 ```
 ansible-playbook deploy-rs-addon.yaml \
     -i inventory/mycluster/hosts.ini \
-    -e rs_addon_location=https://artifactory.coprs.esa-copernicus.eu/artifactory/rs-docker-local/rs-addons/s1/RS_ADDON_S1-L1_<VERSION>.zip \
+    -e rs_addon_location=https://artifactory.coprs.esa-copernicus.eu/artifactory/rs-zip-private/rs-addons/s1/RS_ADDON_S1-L1_<VERSION>.zip \
     -e stream_name=S1_L1
 ```
 
 ```
 ansible-playbook deploy-rs-addon.yaml \
     -i inventory/mycluster/hosts.ini \
-    -e rs_addon_location=https://artifactory.coprs.esa-copernicus.eu/artifactory/rs-docker-local/rs-addons/s1/RS_ADDON_S1-L2_<VERSION>.zip \
-    -e stream_name=S1_L0AIOP
+    -e rs_addon_location=https://artifactory.coprs.esa-copernicus.eu/artifactory/rs-zip-private/rs-addons/s1/RS_ADDON_S1-L2_<VERSION>.zip \
+    -e stream_name=S1_L2
 ```
 
 For further information on using the deployment script, please consult its [manual](https://github.com/COPRS/infrastructure/blob/e642b4e78782b3e5d649570e4a72b27cb42efeed/doc/how-to/RS%20Add-on%20-%20RS%20Core.md).
+
+  
+## Acroynms
+
+| Abbreviation | Definition |
+|---|---|
+| AIOP | All-In-One-Processor |
+| ASP | Assembling Slicing Processor |
+| COPRS | Copernicus Reference System |
+| CPU | Central Processing Unit
+| DB | Database |
+| EDRS | European Data Relay Satellite |
+| IPF | Instrument Processing Facility |
+| L0 | Level-0 |
+| L1 | Level-1 |
+| L2| Level-2|
+| RAM | Random Access Memory |
+| RS | Reference System |
+| S1 | Sentinel-1 |
+| SCDF | Spring Cloud Dataflow |
+| SpEL | Sprint Expression Language |
+| OBS | Object Storage |
+
