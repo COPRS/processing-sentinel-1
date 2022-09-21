@@ -17,14 +17,12 @@ The following figure provides an overview about how the different RS Add-ons are
 
 ![overview](./media/rs_addons_s1_overview.png "Overview")
 
-The S1 AIOP processor consumes EDRS Sessions are producing L0 Segment files from it. The S1 ASP is using these segments to produce L0 Slices from it. The S1 L1 and L2 processor are using these slices to produce higher level products.
+The S1 AIOP processor consumes EDRS Sessions are producing L0 Segment files from it. The S1 ASP is using these segments to produce L0 Slices from it.
 
 ## Available RS Addons
 The following individual processing chains are available:
 * [S1 AIOP](./s1-l0aiop/doc/ReleaseNote.md)
 * [S1 ASP](./s1-l0asp/doc/ReleaseNote.md)
-* [S1 L1](./s1-l1/doc/ReleaseNote.md)
-* [S1 L2](./s1-l2/doc/ReleaseNote.md)
 
 For more information, please consult [https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1](https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1)
 
@@ -59,20 +57,6 @@ ansible-playbook deploy-rs-addon.yaml \
     -i inventory/mycluster/hosts.ini \
     -e rs_addon_location=https://artifactory.coprs.esa-copernicus.eu/artifactory/rs-zip-private/rs-addons/s1/RS_ADDON_S1-L0AIOP_<VERSION>.zip \
     -e stream_name=S1_L0AIOP
-```
-
-```
-ansible-playbook deploy-rs-addon.yaml \
-    -i inventory/mycluster/hosts.ini \
-    -e rs_addon_location=https://artifactory.coprs.esa-copernicus.eu/artifactory/rs-zip-private/rs-addons/s1/RS_ADDON_S1-L1_<VERSION>.zip \
-    -e stream_name=S1_L1
-```
-
-```
-ansible-playbook deploy-rs-addon.yaml \
-    -i inventory/mycluster/hosts.ini \
-    -e rs_addon_location=https://artifactory.coprs.esa-copernicus.eu/artifactory/rs-zip-private/rs-addons/s1/RS_ADDON_S1-L2_<VERSION>.zip \
-    -e stream_name=S1_L2
 ```
 
 For further information on using the deployment script, please consult its [manual](https://github.com/COPRS/infrastructure/blob/e642b4e78782b3e5d649570e4a72b27cb42efeed/doc/how-to/RS%20Add-on%20-%20RS%20Core.md).
