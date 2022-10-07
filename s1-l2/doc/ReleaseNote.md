@@ -127,7 +127,7 @@ The preparation worker is used in all Sentinel-1 and Sentinel-3 RS addon process
 | ``app.preparation-worker.process.processingstation`` | Processing Station (default: ``WILE``) |
 | ``app.preparation-worker.process.params`` | Dynamic processing parameters for the job order. Contains a map of key value pairs |
 | ``app.preparation-worker.process.outputregexps`` | Map to match regular expressions to output file types. Key: output file type, Value: regular expression used for file names |
-| ``app.preparation-worker.process.seaCoverageCheckPattern`` | Sea coverage check configuration. Files with names matching this pattern are checked. If not set, default is ``$a`` that means no check is performed and all files will be processed. Example: ^S1[A-D]_(IW|EW|S[1-6])_RAW__0S.* |
+| ``app.preparation-worker.process.seaCoverageCheckPattern`` | Sea coverage check configuration. Files with names matching this pattern are checked. If not set, default is ``$a`` that means no check is performed and all files will be processed. Example: ``^S1[A-D]_(IW|EW|S[1-6])_RAW__0S.*`` |
 | ``app.preparation-worker.process.minSeaCoveragePercentage`` | Sea coverage check configuration. Possible values: 0 to 100. Configuration of minimum percentage of area of the product that is over sea that is used to decide if the product will be processed. When set to 0 (default) a sea coverage > 0 will be regarded as over sea. If set to 100 only products with full sea coverage will be processed.   |
 | ``app.preparation-worker.process.landMaskFilePath`` | Sea coverage check configuration. Path to the mask file in EOF format. If not set, no check is performed and all files will be processed. Example: /shared/sentinel1/masks/S1__OPER_MSK__LAND__V20140403T210200_G20200914T080808.EOF|
 
