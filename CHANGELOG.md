@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.7.0-rc1] - 2022-10-26
+
+### Added
+
+- RS-508: Process EW L0 only inside AOI given by L0EWSliceMaskCheck (Note that the SLC products are currently not produced due to RS-661)
+
+### Changed
+
+- N/A
+
+### Removed
+
+- N/A
+
 ## [1.6.0-rc1] - 2022-09-28
 
 ### Added
@@ -12,7 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-RS-556: rs-addons S1 and S3: wap timeouts are too low
+- RS-556: rs-addons S1 and S3: wap timeouts are too low
 
 ### Removed
 
@@ -23,40 +37,53 @@ RS-556: rs-addons S1 and S3: wap timeouts are too low
 
 ### Added
 
-RS-498: Adding a house keep service handling timeout scenarios
-RS-501: Changed location where RS Core Components and images are pushed to
+- RS-498: Adding a house keep service handling timeout scenarios
+- RS-501: Changed location where RS Core Components and images are pushed to
 
 ### Changed
 
-RS-497: Update documentation to be easy to use
+- RS-497: Update documentation to be easy to use
 
 ### Removed
 
 - N/A
 
+## [1.4.2-rc1] - 2022-17-10
+
+### Added
+- N/A
+
+### Changed
+- RS-623 / RS-624: [BUG] [OPS] Sentinel-1 AIO preparation job stuck in GENERATING state with mandatory files not found. Backport from 1.5.0.
+  WARNING: When using this version ensure that the configuration 'app.preparation-worker.process.hostname' for the RS Add-on is not set to ${HOSTNAME}, but a static unique name.
+
 ## [1.4.1-rc1] - 2022-09-22
 
 ### Added
-N/A
+
+- N/A
 
 ### Changed
-RS-XX: Merging documentation updates from develop into V1.1
+
+- RS-XX: Merging documentation updates from develop into V1.1
 
 ### Removed
-N/A
+
+- N/A
 
 ## [1.4.0-rc1] - 2022-08-03
 
 ### Added
-RS-431: Develop S1 L1 processor as a RS-add-on
-RS-432: Develop S1 L2 processor as a RS-add-on
-RS-441: Organize End User documentation for S1
+
+- RS-431: Develop S1 L1 processor as a RS-add-on
+- RS-432: Develop S1 L2 processor as a RS-add-on
+- RS-441: Organize End User documentation for S1
 
 ### Changed
-N/A
+- N/A
 
 ### Removed
-N/A
+- N/A
 
 
 ## [1.3.0-rc1] - 2022-07-06
