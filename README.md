@@ -28,6 +28,8 @@ The following individual processing chains are available:
 
 For more information, please consult [https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1](https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1)
 
+Please note that each of the RS Add-ons are using a generic set of microservices. The available configuration parameters are not described in the RS Add-on directly, but can be found in a [common documentation](./common/README.md) that is applicable for all the RS add-ons listed above. Please consult it in order to learn what configuraton parameters are available.
+
 ## Dependencies
 
 In order to work properly the RS Add-ons are requiring a few dependencies that needs to be deployed before hands.
