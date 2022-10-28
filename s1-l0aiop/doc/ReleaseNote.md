@@ -51,7 +51,7 @@ The config map will be created in kubernetes in the processing namespace and wil
 
 ## Deployment Prerequisite
 
-In order to operate this RS add-on there are some dependencies that needs to be deployed beforehand. For additional information, please consult the [common configuration](common/README.md#deployment-prerequisite).
+In order to operate this RS add-on there are some dependencies that needs to be deployed beforehand. For additional information, please consult the [common configuration](/common/README.md#deployment-prerequisite).
 
 ## Configuration
 
