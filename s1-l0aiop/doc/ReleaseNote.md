@@ -7,6 +7,7 @@
     * [Requirements](#requirements)
     * [Additional Resources](#additional-resources)
     * [Deployment Prerequisite](#deployment-prerequisite)
+    * [Configuration](#configuration)
 
 ## Overview
 
