@@ -27,9 +27,9 @@ db.createUser({user: "<USER>", pwd: "<PASSWORD>", roles: [{ role: "readWrite", d
 db.sequence.insert({_id: "appDataJob",seq: 0});
 ``
 
-# Configuration Parameters
+## Configuration Parameters
 
-# Overview
+### Overview
 The following sections are giving an overview about common components that are used within the processing chains defined within the RS add-ons.
 
 Please note that depending on the component the name of the parameters are varying. In general the configuraton parameter will match the pattern `app.<component-name>.<parameter>`. The string `app` ist static and a requirement for SCDF and is always present. 
@@ -38,7 +38,7 @@ Please note that depending on the component the name of the parameters are varyi
 
 The name  of the `parameter` are the actual configuration and can be taken from the tables given below in order to configure a specific behaviour of the processing chain.
 
-## Processing Filter
+### Processing Filter
 
 Each RS Add-on can have two different kind of filters:
 * A filter used as a gate to decide what products shall be processed (``message-filter``)
@@ -55,15 +55,15 @@ The message filter is always existing to ensure that the chain just consumes pro
 |``app.priority-filter-medium.filter.function.expression``| A [SpEL](https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/expressions.html) expression defining what request are supposed to be handled by the medium priority chain. E.g. handling all S1 events with NRT timeliness. ``payload.timeliness == 'NRT'``| 
 |``app.priority-filter-low.filter.function.expression``|  [SpEL](https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/expressions.html) expression defining what request are supposed to be handled by the low priority chain. E.g. handling all events that are not having a timeliness: ``(payload.timeliness != 'PT') && (payload.timeliness != 'NRT')``| 
 
-## Preparation Worker
+### Preparation Worker
 
 The preparation worker is used in all Sentinel-1 and Sentinel-3 RS add-on processing chains. The configuration is compounded by two different parts: A generic configuration that defines the interface with other systems (e.g. databases) and one containing the specific logic of the processing that shall be applied by the chain.
 
 Please note that the preparation worker is a generic component and thus some parameters can be applied everywhere, but just make sense in specific workflows. E.g. functions for Sentinel-1 doesn't make sense to be used in Sentinel-3. Be aware that not all combinations will result in the expected behaviour. Each RS add-on is providing however a factory default configuration that provides a working example of how a specific component needs to be configured in order to work with the generic components.
 
-### Generic configuration part
+#### Generic configuration part
 
-#### MongoDB Connection
+##### MongoDB Connection
 
 | Property | Details |
 |----------|---------|
@@ -73,7 +73,7 @@ Please note that the preparation worker is a generic component and thus some par
 | ``app.preparation-worker.mongodb.username`` | Username to query and update documents in the MongoDB (default: ``${MONGO_USERNAME}``, Environment variable extracted from the secret ``mongoprepration``) |
 | ``app.preparation-worker.mongodb.password`` | Password for the user to query and update documents in the MongoDB (default: ``${MONGO_PASSWORD}``, Environment variable extracted from the secret ``mongoprepration``) |
 
-#### Metadata Search Controller Connection
+##### Metadata Search Controller Connection
 
 | Property | Details |
 |----------|---------|
@@ -81,7 +81,7 @@ Please note that the preparation worker is a generic component and thus some par
 | ``app.preparation-worker.metadata.nbretry`` | Number of retries, when a query fails (default: ``3``) |
 | ``app.preparation-worker.metadata.temporetryms`` | Timeout between retries in milliseconds (default: ``1000``) |
 
-#### Process Configuration 
+##### Process Configuration 
 
 | Property | Details |
 |----------|---------|
@@ -95,7 +95,7 @@ Please note that the preparation worker is a generic component and thus some par
 | ``app.preparation-worker.process.params`` | Dynamic processing parameters for the job order. Contains a map of key value pairs |
 | ``app.preparation-worker.process.outputregexps`` | Map to match regular expressions to output file types. Key: output file type, Value: regular expression used for file names |
 
-#### Worker Configuration
+##### Worker Configuration
 
 | Property | Details |
 |----------|---------|
@@ -108,7 +108,7 @@ Please note that the preparation worker is a generic component and thus some par
 | ``app.preparation-worker.worker.type-slice-length`` | Map of all lengths for different slice types in Sentinel-1 |
 | ``app.preparation-worker.worker.map-type-meta`` | Map for product types to corresponding metadata indexes, if the product type itself is not the same as the index |
 
-#### Tasktable Configuration
+##### Tasktable Configuration
 
 | Property | Details |
 |----------|---------|
@@ -116,9 +116,9 @@ Please note that the preparation worker is a generic component and thus some par
 | ``app.preparation-worker.tasktable.routing`` | Map to determine tasktable to use for an incoming message, to create new AppDataJobs for the preparation worker |
 
 
-### Product type specific configuration part
+#### Product type specific configuration part
 
-#### AIOP Configuration
+##### AIOP Configuration
 
 | Property | Details |
 |----------|---------|
@@ -133,7 +133,7 @@ Please note that the preparation worker is a generic component and thus some par
 | ``app.preparation-worker.aiop.nrt-output-path`` | Value for dynamic processing parameter ``NRTOutputPath`` (default: ``/data/localWD/%WORKING_DIR_NUMBER%/NRT``). ``%WORKING_DIR_NUMER%`` will be replaced by the actual working directory number for the JobOrder |
 | ``app.preparation-worker.aiop.pt-output-path`` | Value for dynamic processing parameter ``PTOutputPath`` (default: ``/data/localWD/%WORKING_DIR_NUMBER%/PT``). ``%WORKING_DIR_NUMER%`` will be replaced by the actual working directory number for the JobOrder |
 
-## Housekeeping
+### Housekeeping
 
 The Housekeeping service does have the same configuration as the Preparation Worker, in order for timeout jobs to be correctly composed. In order for the housekeeping mechanism to function properly the following properties have to be set additionally:
 
@@ -143,7 +143,7 @@ The Housekeeping service does have the same configuration as the Preparation Wor
 | ``app.housekeep.worker.maxAgeJobMs`` | List of timeouts, when to delete old jobs from the system. Timeout is configured in milliseconds and seperately for each of the possible AppDataJobState: ``waiting``, ``dispatching``, ``generating``, ``terminated``. The most important ones to configure are ``generating`` and ``terminated``. Default: 604800000 (7 days) |
 | ``app.time.spring.integration.poller.fixed-rate`` | Configuration how often the housekeeping mechanism should be triggered (how often the Housekeeper should check the database for old jobs and timeout jobs). Default: 60s |
 
-## Execution Worker
+### Execution Worker
 
 Note that the execution worker might have in some context a priority filter before and multiple instances might be existing within the chain:
 
@@ -155,14 +155,14 @@ The configuration for the different execution workers are usually the same howev
 
 The examples in the following sections are just giving the configuration parameters for the high priority workers. They are the same for all Execution Workers however.
 
-### Important SCDF Properties
+#### Important SCDF Properties
 
 | Property | Details |
 |----------|---------|
 | ``app.execution-worker-high.spring.cloud.stream.kafka.bindings.input.consumer.configuration.max.poll.records`` | Number of records that are pulled in batch when retrieving new messages for the kafka consumer. Tests have shown, that for reliable processing this property shall be set to ``1`` |
 | ``app.execution-worker-high.spring.cloud.stream.kafka.bindings.input.consumer.configuration.max.poll.interval.ms`` | Number of milliseconds how long the processing of one kafka message shall take, before consumer is kicked from consumer group by the kafka broker. This property is very important for the processing of long-running tasks. |
 
-### Process Configuration
+#### Process Configuration
 
 | Property | Details |
 |----------|---------|
@@ -185,7 +185,7 @@ The examples in the following sections are just giving the configuration paramet
 | ``app.execution-worker-high.process.productTypeEstimatedCount.<typX>.regexp``| Regular expression matching the output product type, e.g. OL_0_EFR__G.  The paramter ``count`` is configured to be the count of types matching this regex |
 | ``app.execution-worker-high.process.productTypeEstimatedCount.<typX>.count`` | Number of outputs estimated fot the specified regex |
 
-### Development Configuration
+#### Development Configuration
 
 | Property | Details |
 |----------|---------|
@@ -193,7 +193,7 @@ The examples in the following sections are just giving the configuration paramet
 | ``app.execution-worker-high.dev.stepsActivation.upload`` | Switch to determine whether or not outputs shall be uploaded (default: ``true``) |
 | ``app.execution-worker-high.dev.stepsActivation.erasing`` | Switch to determine whether or not the working directory shall be deleted (default: ``true``) |
 
-## Deployer properties
+### Deployer properties
 
 The following table only contains a few properties used by the factory default configuration. For more information please refer to the [official documentation](https://docs.spring.io/spring-cloud-dataflow/docs/current/reference/htmlsingle/#configuration-kubernetes-deployer) or COPRS-ICD-ADST-001139201 - ICD RS core.
   
