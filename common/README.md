@@ -1,12 +1,14 @@
 :arrow_heading_up: Go back to the [Reference System Software repository](https://github.com/COPRS/reference-system-software) :arrow_heading_up:
 
-# Purpose
+# Common Configuration Documentation
 
-The purpose of this document is to give an overview about the configuration parameters that are used across all the RS Add-ons of this repository. Each repository is using a set of generic microservices that can be found in the [Production Common repository] https://github.com/COPRS/production-common.
+## Purpose
+
+The purpose of the following sections is to give an overview about the configuration parameters that are used across all the RS Add-ons of this repository. Each repository is using a set of generic microservices that can be found in the [Production Common repository](https://github.com/COPRS/production-common).
 
 Each RS Add-on just uses a specific configuration of these generic components. To avoid a duplication of the configuration the common parameters are explained in this document. Please check the specific RS add-on for specific information on the RS Add-On.
 
-# Deployment Prerequisite
+## Deployment Prerequisite
 
 Following components of the COPRS shall be installed and running
 - [COPRS Infrastructure](https://github.com/COPRS/infrastructure)
