@@ -12,12 +12,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- RS-660: S1_L0AIO Remove priority filters
 - RS-661: Incorrect routing configuration of Sentinel-1 Level-1 workflow to produce EW_SLC Level-1 outputs
 
 ### Removed
 
-- N/A
+- RS-660: S1_L0AIO Remove priority filters
 
 ## [1.7.0-rc1] - 2022-10-26
 
