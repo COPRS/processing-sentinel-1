@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.8.0-rc1] - 2022-11-23
+
+### Added
+
+- RS-642: Centralized documentation of parameters used within RS add-ons
+
+### Changed
+
+- RS-660: S1_L0AIO Remove priority filters
+- RS-661: Incorrect routing configuration of Sentinel-1 Level-1 workflow to produce EW_SLC Level-1 outputs
+
+### Removed
+
+- N/A
+
 ## [1.7.0-rc1] - 2022-10-26
 
 ### Added
