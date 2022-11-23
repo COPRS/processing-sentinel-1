@@ -15,7 +15,7 @@ Within this repository you can find the RS Add-ons the for the Sentinel-1 missio
 
 The following figure provides an overview about how the different RS Add-ons are chained into each other when all are deployed:
 
-![overview](./media/rs_addons_s1_overview.png "Overview")
+![overview](./docs/media/rs_addons_s1_overview.png "Overview")
 
 The S1 AIOP processor consumes EDRS Sessions are producing L0 Segment files from it. The S1 ASP is using these segments to produce L0 Slices from it. The S1 L1 and L2 processor are using these slices to produce higher level products.
 
@@ -28,7 +28,7 @@ The following individual processing chains are available:
 
 For more information, please consult [https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1](https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1)
 
-Please note that each of the RS Add-ons are using a generic set of microservices. The available configuration parameters are not described in the RS Add-on directly, but can be found in a [common documentation](./common/README.md) that is applicable for all the RS add-ons listed above. Please consult it in order to learn what configuraton parameters are available.
+Please note that each of the RS Add-ons are using a generic set of microservices. The available configuration parameters are not described in the RS Add-on directly, but can be found in a [common documentation](./docs/common/README.md) that is applicable for all the RS add-ons listed above. Please consult it in order to learn what configuraton parameters are available.
 
 ## Dependencies
 
