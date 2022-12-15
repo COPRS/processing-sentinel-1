@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.9.0-rc1] - 2022-12-15
+
+### Added
+
+- N/A
+
+### Changed
+
+- N/A
+
+### Removed
+
+- N/A
+
+No Sentinel-1 related modification in this delivery, just a rebuild against the latest version of the services used by the RS add-ons
+
 ## [1.8.0-rc1] - 2022-11-23
 
 ### Added
