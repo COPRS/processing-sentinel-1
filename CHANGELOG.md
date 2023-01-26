@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- RS-769: Enable output estimation for RS-Addons S1 L1 and S1 L2
 - Updating overviews to be in line with current implementations
 
 ### Removed
