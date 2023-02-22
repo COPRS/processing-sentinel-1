@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.11.0-rc1] - 2023-02-22
+
+### Added
+
+- N/A
+
+### Changed
+
+- RS-826: Overwrite executing shell with tcsh for execution-workers in S1 L1 and L2
+### Removed
+
+- N/A
+
 ## [1.10.0-rc1] - 2023-01-27
 
 ### Added
