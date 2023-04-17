@@ -1,8 +1,8 @@
 :arrow_heading_up: Go back to the [Reference System Software repository](https://github.com/COPRS/reference-system-software) :arrow_heading_up:
 
-# RS Add-on S1 L0 ASP
+# RS Add-on S1 L1
  
- * [RS Add-on S1 L0 ASP](#rs-add-on-s1-l0-asp)
+ * [RS Add-on S1 L1](#rs-add-on-s1-l1)
     * [Overview](#overview)
     * [Requirements](#requirements)
     * [Additional Resources](#additional-resources)
@@ -13,9 +13,7 @@
 
 ![overview](./media/overview.png "Overview")
 
-This add-on contains the configuration for the S1 L0 ASP processing chain and will consume the segments from the AIOP in order to create slices.
-
-The chain will start from the topic catalog event and watching out for new services there. The message filter will ensure that just segments and related auxiliary files are consumed by the chain. All other product types will be discard and no processing occurs. Just if the request is not filtered it will be send to the Preparation worker. Its major task is to ensure that all required products for a production are available. According to the task table of the ASP it will check if all required auxiliary files can be found in the catalog via the Metadata Search Controller. Additionally it will verify that all required chunks of the session are ingested into the catalog already as well.
+The chain will start from the topic catalog event and watching out for new services there. The message filter will ensure that just segments and related auxiliary files are consumed by the chain. All other product types will be discard and no processing occurs. Just if the request is not filtered it will be send to the Preparation worker. Its major task is to ensure that all required products for a production are available. According to the task table of L1 Processor it will check if all required auxiliary files can be found in the catalog via the Metadata Search Controller. Additionally it will verify that all required chunks of the session are ingested into the catalog already as well.
 
 If the production is not ready yet the request will be persisted and discarded. Once a new relevant product for the chain arrives, it will check again if all required input products are available. When all suitable products are available the job order will be generated and send to the execution worker. Note that after the Preparation Worker there are three chains available that are gated by a priority filter that allows to split the request regarding their priority on different groups of execution workers. This can be used to prioritize certain types of request.
 
@@ -25,7 +23,7 @@ The execution chains does handle three different priorities:
 * Medium
 * Low
 
-These can be used to honor the different requirements on timeliness. Each priority will have a filter that can be configured to determine the priority of the incoming event and decide which priority will be responsible for performing the processing. It is possible to scale the different worker priorities individually as it might be required to spawn more workers for the high priorities than for the lower ones.
+These can be used to honour the different requirements on timeliness. Each priority will have a filter that can be configured to determine the priority of the incoming event and decide which priority will be responsible for performing the processing. It is possible to scale the different worker priorities individually as it might be required to spawn more workers for the high priorities than for the lower ones.
 
 For details, please see the applicable [Processing Chain Design](https://github.com/COPRS/production-common/blob/main/docs/architecture/README.md#processing)
 
@@ -48,9 +46,9 @@ This software does have the following minimal requirements:
 
 ## Additional Resources 
 
-The preparation worker needs the task table for the IPF wrapped inside of the execution worker. To provide the preparation worker with the needed task table, a configmap will be created by the deployment script based on the file ``tasktable_configmap.yaml``. The resulting configmap contains the task table needed for the S1 ASP preparation worker, in order to create compatible job orders. 
+The preparation worker needs the task table for the IPF wrapped inside of the execution worker. To provide the preparation worker with the needed task table, a configmap will be created by the deployment script based on the file ``tasktable_configmap.yaml``. The resulting configmap contains the task table needed for the S1 L1 preparation worker, in order to create compatible job orders. 
 
-The config map will be created in kubernetes in the processing namespace and will be named ``s1-l0asp-tasktables``, to be distinguishable from other tasktable configmaps.
+The config map will be created in kubernetes in the processing namespace and will be named ``s1-l1-tasktables``, to be distinguishable from other tasktable configmaps.
 
 ## Deployment Prerequisite
 
@@ -60,4 +58,4 @@ In order to operate this RS add-on there are some dependencies that needs to be 
 
 The RS add-on is using a set of generic microservices from the RS Core. The configuration of these configuration parameters are not given within this document, but can be found in the [common documentation](/docs/common/README.md) that is applicable for all RS add-ons.
 
-There are no specific configurations existing for this RS add-on.
+Sentinel-1 L1 is using a EW SLC mask in order to filter out some requests that are not necessary to be produced. Further information can be found under the [process configuration](/docs/common/README.md#process-configuration).
