@@ -23,7 +23,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        component: [s1-l0aiop, s1-l0asp, s1-l1, s1-l2]
+        component: [s1-l0aiop, s1-l0asp]
     steps:
     - uses: actions/checkout@v2
     - uses: ./.github/actions/build-core-components
