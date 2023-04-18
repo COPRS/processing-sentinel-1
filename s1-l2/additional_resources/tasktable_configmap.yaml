@@ -9,14 +9,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>EW_RAW__0_OCN__2</Processor_Name>
-      <Version>3.52</Version>
+      <Version>3.61</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">25000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.52</Version>
+          <Version>3.61</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -75,7 +75,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -283,7 +283,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>MDC</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/MDC_MultiSwathDopMain</File_Name>
@@ -313,7 +313,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WPC</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WPC_ProcMain</File_Name>
@@ -343,7 +343,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -388,7 +388,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC2</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC2_ProcMain.sh</File_Name>
@@ -419,7 +419,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LOP</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LOP_ProcMain</File_Name>
@@ -541,7 +541,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>ProcEND</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/IPF_ProcEND</File_Name>
@@ -577,20 +577,7 @@ data:
                   </List_of_Alternatives>
                 </Input>
               </List_of_Inputs>
-              <List_of_Outputs count="2">
-                <Output>
-                  <Destination>DB</Destination>
-                  <Mandatory>Yes</Mandatory>
-                  <Type>LIST</Type>
-                  <File_Name_Type>Directory</File_Name_Type>
-                </Output>
-                <Output>
-                  <Destination>DB</Destination>
-                  <Mandatory>No</Mandatory>
-                  <Type>RPT</Type>
-                  <File_Name_Type>Directory</File_Name_Type>
-                </Output>
-              </List_of_Outputs>
+              <List_of_Outputs count="0"/>
               <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>1</Number_of_CPUs>
             </Task>
@@ -602,14 +589,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>IW_RAW__0_OCN__2</Processor_Name>
-      <Version>3.52</Version>
+      <Version>3.61</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">33000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.52</Version>
+          <Version>3.61</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -668,7 +655,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -876,7 +863,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>MDC</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/MDC_MultiSwathDopMain</File_Name>
@@ -906,7 +893,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WPC</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WPC_ProcMain</File_Name>
@@ -936,7 +923,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -981,7 +968,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC2</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC2_ProcMain.sh</File_Name>
@@ -1012,7 +999,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LOP</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LOP_ProcMain</File_Name>
@@ -1134,7 +1121,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>ProcEND</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/IPF_ProcEND</File_Name>
@@ -1170,20 +1157,7 @@ data:
                   </List_of_Alternatives>
                 </Input>
               </List_of_Inputs>
-              <List_of_Outputs count="2">
-                <Output>
-                  <Destination>DB</Destination>
-                  <Mandatory>Yes</Mandatory>
-                  <Type>LIST</Type>
-                  <File_Name_Type>Directory</File_Name_Type>
-                </Output>
-                <Output>
-                  <Destination>DB</Destination>
-                  <Mandatory>No</Mandatory>
-                  <Type>RPT</Type>
-                  <File_Name_Type>Directory</File_Name_Type>
-                </Output>
-              </List_of_Outputs>
+              <List_of_Outputs count="0"/>
               <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>1</Number_of_CPUs>
             </Task>
@@ -1195,14 +1169,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>SM_RAW__0_OCN__2</Processor_Name>
-      <Version>3.52</Version>
+      <Version>3.61</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">41000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.52</Version>
+          <Version>3.61</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -1261,7 +1235,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -1469,7 +1443,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SDC</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SDC_SingleSwathDopMain</File_Name>
@@ -1499,7 +1473,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SBE</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SBE_CntSceMain</File_Name>
@@ -1529,7 +1503,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -1574,7 +1548,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC2</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC2_ProcMain.sh</File_Name>
@@ -1605,7 +1579,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LOP</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LOP_ProcMain</File_Name>
@@ -1742,7 +1716,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>ProcEND</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/IPF_ProcEND</File_Name>
@@ -1778,20 +1752,7 @@ data:
                   </List_of_Alternatives>
                 </Input>
               </List_of_Inputs>
-              <List_of_Outputs count="2">
-                <Output>
-                  <Destination>DB</Destination>
-                  <Mandatory>Yes</Mandatory>
-                  <Type>LIST</Type>
-                  <File_Name_Type>Directory</File_Name_Type>
-                </Output>
-                <Output>
-                  <Destination>DB</Destination>
-                  <Mandatory>No</Mandatory>
-                  <Type>RPT</Type>
-                  <File_Name_Type>Directory</File_Name_Type>
-                </Output>
-              </List_of_Outputs>
+              <List_of_Outputs count="0"/>
               <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>1</Number_of_CPUs>
             </Task>
@@ -1803,14 +1764,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>WV_RAW__0_OCN__2</Processor_Name>
-      <Version>3.52</Version>
+      <Version>3.61</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">7200</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.52</Version>
+          <Version>3.61</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -1869,7 +1830,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -2032,7 +1993,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WVP</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WVP_WaveProcessMain</File_Name>
@@ -2062,7 +2023,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -2107,7 +2068,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LOP</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LOP_ProcMain</File_Name>
@@ -2229,7 +2190,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>ProcEND</Name>
-              <Version>3.52</Version>
+              <Version>3.61</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/IPF_ProcEND</File_Name>
@@ -2265,20 +2226,7 @@ data:
                   </List_of_Alternatives>
                 </Input>
               </List_of_Inputs>
-              <List_of_Outputs count="2">
-                <Output>
-                  <Destination>DB</Destination>
-                  <Mandatory>Yes</Mandatory>
-                  <Type>LIST</Type>
-                  <File_Name_Type>Directory</File_Name_Type>
-                </Output>
-                <Output>
-                  <Destination>DB</Destination>
-                  <Mandatory>No</Mandatory>
-                  <Type>RPT</Type>
-                  <File_Name_Type>Directory</File_Name_Type>
-                </Output>
-              </List_of_Outputs>
+              <List_of_Outputs count="0"/>
               <List_of_Breakpoints count="0"/>
               <Number_of_CPUs>1</Number_of_CPUs>
             </Task>
