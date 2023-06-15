@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.13.2-rc1] - 2023-06-15
+
+### Added
+
+- RS_963: [Documentation] [PRO] [S1] [S3] Missing build documentation
+
+### Changed
+
+- RS-966: [S1] IW_OCN__2A product is not generated
+- RS-976: Discrepancies on SLC Level-1 production for EW instrument mode (mask was updated)
+
+### Removed
+
+- N/A
+
 ## [1.13.1-rc1] - 2023-05-17
 
 ### Added
