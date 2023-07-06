@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.14.0-rc1] - 2023-07-05
+## [1.14.0-rc1] - 2023-07-06
 
 ### Added
 
@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - RS-885: Update S1-L12 to 3.6.1. Masks was updated
+- RS-1003: [BUG] S1-L2 - StripMap computings reach systematically timeout
 
 ### Removed
 
