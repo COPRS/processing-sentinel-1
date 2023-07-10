@@ -1,7 +1,8 @@
-:arrow_heading_up: Go back to the [Reference System Software repository](https://github.com/COPRS/reference-system-software) :arrow_heading_up:
-
+### Copernicus Reference System
 # Common Configuration Documentation
-
+### Reference System version V2.0
+---
+:arrow_heading_up: Go back to the [Reference System Software repository](https://github.com/COPRS/reference-system-software) :arrow_heading_up:
 ## Purpose
 
 The purpose of the following sections is to give an overview about the configuration parameters that are used across all the RS Add-ons of this repository. Each repository is using a set of generic microservices that can be found in the [Production Common repository](https://github.com/COPRS/production-common).
