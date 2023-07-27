@@ -190,6 +190,7 @@ The following properties are required for EDRS sessions and are applicable for t
 | ``app.preparation-worker.pdu.config.<product_type>.offset-in-s`` | Offset of the start from the reference point. Double value |
 | ``app.preparation-worker.pdu.config.<product_type>.gap-threshhold-in-s`` | Thresshold for the gap handler to determine if two products are handled as continuous |
 | ``app.preparation-worker.pdu.config.<product_type>.dyn-proc-params`` | Map of static values for the dynamic processing parameters on the job order |
+| ``app.preparation-worker.pdu.config.<product_type>.minPDULengthThreshold`` | Minimum TimeInterval a given PDU processor can handle, in seconds. Default: 0.0 |
 
 #### S3Synergy Configuration
 
