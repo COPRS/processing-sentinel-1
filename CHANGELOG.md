@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.14.0-rc2] - 2023-07-31
+
+### Added
+
+- RS-778: Homogenisation of CIDL documentation
+
+### Changed
+
+- RS-908: [BUG] [OPS] Some millisecond ghost detected despite detection time set to 0
+- RS-966: [BUG] [S1] IW_OCN__2A product is not generated.
+
+### Removed
+
+- N/A
+
 ## [1.14.0-rc1] - 2023-07-06
 
 ### Added
