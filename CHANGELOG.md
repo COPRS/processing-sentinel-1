@@ -5,6 +5,65 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.14.0-rc2] - 2023-07-31
+
+### Added
+
+- RS-778: Homogenisation of CIDL documentation
+
+### Changed
+
+- RS-908: [BUG] [OPS] Some millisecond ghost detected despite detection time set to 0
+- RS-966: [BUG] [S1] IW_OCN__2A product is not generated.
+
+### Removed
+
+- N/A
+
+## [1.14.0-rc1] - 2023-07-06
+
+### Added
+
+- N/A
+
+### Changed
+
+- RS-885: Update S1-L12 to 3.6.1. Masks was updated
+- RS-1003: [BUG] S1-L2 - StripMap computings reach systematically timeout
+
+### Removed
+
+- N/A
+
+## [1.13.2-rc1] - 2023-06-15
+
+### Added
+
+- RS_963: [Documentation] [PRO] [S1] [S3] Missing build documentation
+
+### Changed
+
+- RS-966: [S1] IW_OCN__2A product is not generated
+- RS-976: Discrepancies on SLC Level-1 production for EW instrument mode (mask was updated)
+
+### Removed
+
+- N/A
+
+## [1.13.1-rc1] - 2023-05-17
+
+### Added
+
+- N/A
+
+### Changed
+
+- RS-908: Some millisecond ghost detected despite detection time set to 0
+
+### Removed
+
+- N/A
+
 ## [1.13.0-rc1] - 2023-03-30
 
 ### Added
