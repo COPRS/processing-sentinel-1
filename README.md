@@ -1,13 +1,13 @@
 :arrow_heading_up: Go back to the [Reference System Software repository](https://github.com/COPRS/reference-system-software) :arrow_heading_up:
 
 # Processing Sentinel-1
-* [Processing Sentinel 1](#processing-sentinel-1)  
-  * [Overview](#overview)
-  * [Available RS Addons](#available-rs-addons)
-  * [Dependencies](#dependencies)
-  * [Deployment](#deployment)
-  * [Acroynms](#acroynms)
 
+- [Processing Sentinel 1](#processing-sentinel-1)
+  - [Overview](#overview)
+  - [Available RS Addons](#available-rs-addons)
+  - [Dependencies](#dependencies)
+  - [Deployment](#deployment)
+  - [Acroynms](#acroynms)
 
 ## Overview
 
@@ -17,14 +17,14 @@ The following figure provides an overview about how the different RS Add-ons are
 
 ![overview](./docs/media/rs_addons_s1_overview.png "Overview")
 
-The S1 AIOP processor consumes EDRS Sessions are producing L0 Segment files from it. The S1 ASP is using these segments to produce L0 Slices from it. The S1 L1 and L2 processor are using these slices to produce higher level products.
+The S1 AIOP processor consumes EDRS Sessions are producing L0 Segment files from it. The S1 ASP is using these segments to produce L0 Slices from it.
 
 ## Available RS Addons
+
 The following individual processing chains are available:
-* [S1 AIOP](./s1-l0aiop/doc/ReleaseNote.md)
-* [S1 ASP](./s1-l0asp/doc/ReleaseNote.md)
-* [S1 L1](./s1-l1/doc/ReleaseNote.md)
-* [S1 L2](./s1-l2/doc/ReleaseNote.md)
+
+- [S1 AIOP](./s1-l0aiop/doc/ReleaseNote.md)
+- [S1 ASP](./s1-l0asp/doc/ReleaseNote.md)
 
 For more information, please consult [https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1](https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1)
 
@@ -92,25 +92,23 @@ ansible-playbook deploy-rs-addon.yaml \
 
 For further information on using the deployment script, please consult its [manual](https://github.com/COPRS/infrastructure/blob/e642b4e78782b3e5d649570e4a72b27cb42efeed/doc/how-to/RS%20Add-on%20-%20RS%20Core.md).
 
-  
 ## Acroynms
 
-| Abbreviation | Definition |
-|---|---|
-| AIOP | All-In-One-Processor |
-| ASP | Assembling Slicing Processor |
-| COPRS | Copernicus Reference System |
-| CPU | Central Processing Unit
-| DB | Database |
-| EDRS | European Data Relay Satellite |
-| IPF | Instrument Processing Facility |
-| L0 | Level-0 |
-| L1 | Level-1 |
-| L2| Level-2|
-| RAM | Random Access Memory |
-| RS | Reference System |
-| S1 | Sentinel-1 |
-| SCDF | Spring Cloud Dataflow |
-| SpEL | Sprint Expression Language |
-| OBS | Object Storage |
-
+| Abbreviation | Definition                     |
+| ------------ | ------------------------------ |
+| AIOP         | All-In-One-Processor           |
+| ASP          | Assembling Slicing Processor   |
+| COPRS        | Copernicus Reference System    |
+| CPU          | Central Processing Unit        |
+| DB           | Database                       |
+| EDRS         | European Data Relay Satellite  |
+| IPF          | Instrument Processing Facility |
+| L0           | Level-0                        |
+| L1           | Level-1                        |
+| L2           | Level-2                        |
+| RAM          | Random Access Memory           |
+| RS           | Reference System               |
+| S1           | Sentinel-1                     |
+| SCDF         | Spring Cloud Dataflow          |
+| SpEL         | Sprint Expression Language     |
+| OBS          | Object Storage                 |
