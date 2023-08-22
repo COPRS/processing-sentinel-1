@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.14.0] - 2023-08-22
+
+### Added
+
+- N/A
+
+### Changed
+
+- RS-1003: [BUG] S1-L2 - StripMap computings reach systematically timeout
+- RS-1074: [BUG] S1-L2 - No production for SM_OCN**2S slice & SM_OCN**2A annotation
+
+### Removed
+
+- N/A
+
 ## [1.14.0-rc2] - 2023-07-31
 
 ### Added
@@ -14,7 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - RS-908: [BUG] [OPS] Some millisecond ghost detected despite detection time set to 0
-- RS-966: [BUG] [S1] IW_OCN__2A product is not generated.
+- RS-966: [BUG] [S1] IW_OCN\_\_2A product is not generated.
 
 ### Removed
 
@@ -43,7 +58,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- RS-966: [S1] IW_OCN__2A product is not generated
+- RS-966: [S1] IW_OCN\_\_2A product is not generated
 - RS-976: Discrepancies on SLC Level-1 production for EW instrument mode (mask was updated)
 
 ### Removed
