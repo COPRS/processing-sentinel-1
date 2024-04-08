@@ -112,3 +112,7 @@ For further information on using the deployment script, please consult its [manu
 | SCDF         | Spring Cloud Dataflow          |
 | SpEL         | Sprint Expression Language     |
 | OBS          | Object Storage                 |
+
+<p align="center">
+ <img src="/docs/media/banner.jpg" width="800" height="50" />
+</p>
