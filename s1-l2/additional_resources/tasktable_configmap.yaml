@@ -9185,7 +9185,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
+                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_ICE</File_Type>
@@ -9200,7 +9200,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
+                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_WAV</File_Type>
@@ -9215,7 +9215,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
+                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_WND</File_Type>
@@ -12770,7 +12770,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
+                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_ICE</File_Type>
@@ -12785,7 +12785,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
+                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_WAV</File_Type>
@@ -12800,7 +12800,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
+                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_WND</File_Type>
@@ -15462,7 +15462,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
+                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_ICE</File_Type>
@@ -15477,7 +15477,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
+                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_WAV</File_Type>
@@ -15492,7 +15492,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
+                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_WND</File_Type>
@@ -16595,7 +16595,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
+                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_ICE</File_Type>
@@ -16610,7 +16610,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
+                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_WAV</File_Type>
@@ -16625,7 +16625,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
+                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_WND</File_Type>
