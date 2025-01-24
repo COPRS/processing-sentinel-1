@@ -9,14 +9,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>AN_RAW__0_GRDF_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">41000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -75,7 +75,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -224,7 +224,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -233,7 +233,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -242,7 +242,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -283,7 +283,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SDC_SingleSwathDopMain</File_Name>
@@ -313,7 +313,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SBE</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SBE_CntSceMain</File_Name>
@@ -343,7 +343,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -394,14 +394,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>AN_RAW__0_GRDH_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">41000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -460,7 +460,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -609,7 +609,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -618,7 +618,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -627,7 +627,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -668,7 +668,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SDC_SingleSwathDopMain</File_Name>
@@ -698,7 +698,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SBE</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SBE_CntSceMain</File_Name>
@@ -728,7 +728,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -779,14 +779,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>AN_RAW__0_GRDM_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">41000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -845,7 +845,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -994,7 +994,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -1003,7 +1003,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -1012,7 +1012,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -1053,7 +1053,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SDC_SingleSwathDopMain</File_Name>
@@ -1083,7 +1083,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SBE</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SBE_CntSceMain</File_Name>
@@ -1113,7 +1113,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -1164,14 +1164,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>AN_RAW__0_SLC__1_GRDF_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">41000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -1230,7 +1230,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -1379,7 +1379,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -1388,7 +1388,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -1397,7 +1397,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -1438,7 +1438,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SDC_SingleSwathDopMain</File_Name>
@@ -1468,7 +1468,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SBE</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SBE_CntSceMain</File_Name>
@@ -1498,7 +1498,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -1549,7 +1549,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC2</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC2_ProcMain.sh</File_Name>
@@ -1586,14 +1586,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>AN_RAW__0_SLC__1_GRDH_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">41000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -1652,7 +1652,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -1801,7 +1801,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -1810,7 +1810,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -1819,7 +1819,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -1860,7 +1860,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SDC_SingleSwathDopMain</File_Name>
@@ -1890,7 +1890,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SBE</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SBE_CntSceMain</File_Name>
@@ -1920,7 +1920,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -1971,7 +1971,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC2</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC2_ProcMain.sh</File_Name>
@@ -2008,14 +2008,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>AN_RAW__0_SLC__1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">41000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -2074,7 +2074,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -2223,7 +2223,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -2232,7 +2232,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -2241,7 +2241,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -2282,7 +2282,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SDC_SingleSwathDopMain</File_Name>
@@ -2312,7 +2312,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SBE</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/SBE_CntSceMain</File_Name>
@@ -2342,7 +2342,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/LPC1_ProcMain.sh</File_Name>
@@ -2393,14 +2393,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>EN_RAW__0_GRDF_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">41000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -2459,7 +2459,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -2608,7 +2608,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -2617,7 +2617,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -2626,7 +2626,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -2667,7 +2667,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SDC_SingleSwathDopMain</File_Name>
@@ -2697,7 +2697,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SBE</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SBE_CntSceMain</File_Name>
@@ -2727,7 +2727,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -2758,13 +2758,13 @@ data:
                   <Destination>DB</Destination>
                   <Mandatory>Yes</Mandatory>
                   <Type>EN_GRDF_1S</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
                 <Output>
                   <Destination>DB</Destination>
                   <Mandatory>No</Mandatory>
                   <Type>EN_GRDF_1A</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
               <List_of_Breakpoints count="0"/>
@@ -2778,14 +2778,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>EN_RAW__0_GRDH_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">41000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -2844,7 +2844,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -2993,7 +2993,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -3002,7 +3002,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -3011,7 +3011,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -3052,7 +3052,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SDC_SingleSwathDopMain</File_Name>
@@ -3082,7 +3082,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SBE</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SBE_CntSceMain</File_Name>
@@ -3112,7 +3112,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -3143,13 +3143,13 @@ data:
                   <Destination>DB</Destination>
                   <Mandatory>Yes</Mandatory>
                   <Type>EN_GRDH_1S</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
                 <Output>
                   <Destination>DB</Destination>
                   <Mandatory>No</Mandatory>
                   <Type>EN_GRDH_1A</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
               <List_of_Breakpoints count="0"/>
@@ -3163,14 +3163,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>EN_RAW__0_GRDM_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">41000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -3229,7 +3229,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -3378,7 +3378,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -3387,7 +3387,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -3396,7 +3396,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -3437,7 +3437,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SDC_SingleSwathDopMain</File_Name>
@@ -3467,7 +3467,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SBE</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SBE_CntSceMain</File_Name>
@@ -3497,7 +3497,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -3528,13 +3528,13 @@ data:
                   <Destination>DB</Destination>
                   <Mandatory>Yes</Mandatory>
                   <Type>EN_GRDM_1S</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
                 <Output>
                   <Destination>DB</Destination>
                   <Mandatory>No</Mandatory>
                   <Type>EN_GRDM_1A</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
               <List_of_Breakpoints count="0"/>
@@ -3548,14 +3548,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>EN_RAW__0_SLC__1_GRDF_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">41000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -3614,7 +3614,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -3763,7 +3763,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -3772,7 +3772,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -3781,7 +3781,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -3822,7 +3822,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SDC_SingleSwathDopMain</File_Name>
@@ -3852,7 +3852,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SBE</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SBE_CntSceMain</File_Name>
@@ -3882,7 +3882,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -3913,13 +3913,13 @@ data:
                   <Destination>DB</Destination>
                   <Mandatory>Yes</Mandatory>
                   <Type>EN_SLC__1S</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
                 <Output>
                   <Destination>DB</Destination>
                   <Mandatory>No</Mandatory>
                   <Type>EN_SLC__1A</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
               <List_of_Breakpoints count="0"/>
@@ -3933,7 +3933,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC2</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC2_ProcMain.sh</File_Name>
@@ -3950,13 +3950,13 @@ data:
                   <Destination>DB</Destination>
                   <Mandatory>Yes</Mandatory>
                   <Type>EN_GRDF_1S</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
                 <Output>
                   <Destination>DB</Destination>
                   <Mandatory>No</Mandatory>
                   <Type>EN_GRDF_1A</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
               <List_of_Breakpoints count="0"/>
@@ -3970,14 +3970,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>EN_RAW__0_SLC__1_GRDH_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">41000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -4036,7 +4036,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -4185,7 +4185,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -4194,7 +4194,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -4203,7 +4203,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -4244,7 +4244,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SDC_SingleSwathDopMain</File_Name>
@@ -4274,7 +4274,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SBE</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SBE_CntSceMain</File_Name>
@@ -4304,7 +4304,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -4335,13 +4335,13 @@ data:
                   <Destination>DB</Destination>
                   <Mandatory>Yes</Mandatory>
                   <Type>EN_SLC__1S</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
                 <Output>
                   <Destination>DB</Destination>
                   <Mandatory>No</Mandatory>
                   <Type>EN_SLC__1A</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
               <List_of_Breakpoints count="0"/>
@@ -4355,7 +4355,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC2</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC2_ProcMain.sh</File_Name>
@@ -4372,13 +4372,13 @@ data:
                   <Destination>DB</Destination>
                   <Mandatory>Yes</Mandatory>
                   <Type>EN_GRDH_1S</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
                 <Output>
                   <Destination>DB</Destination>
                   <Mandatory>No</Mandatory>
                   <Type>EN_GRDH_1A</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
               <List_of_Breakpoints count="0"/>
@@ -4392,14 +4392,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>EN_RAW__0_SLC__1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">41000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -4458,7 +4458,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -4607,7 +4607,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -4616,7 +4616,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -4625,7 +4625,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -4666,7 +4666,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SDC_SingleSwathDopMain</File_Name>
@@ -4696,7 +4696,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SBE</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SBE_CntSceMain</File_Name>
@@ -4726,7 +4726,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -4757,13 +4757,13 @@ data:
                   <Destination>DB</Destination>
                   <Mandatory>Yes</Mandatory>
                   <Type>EN_SLC__1S</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
                 <Output>
                   <Destination>DB</Destination>
                   <Mandatory>No</Mandatory>
                   <Type>EN_SLC__1A</Type>
-                  <File_Name_Type>Regexp</File_Name_Type>
+                  <File_Name_Type>Directory</File_Name_Type>
                 </Output>
               </List_of_Outputs>
               <List_of_Breakpoints count="0"/>
@@ -4777,14 +4777,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>EW_RAW__0_GRDH_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">25000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -4843,7 +4843,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -4992,7 +4992,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -5001,7 +5001,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -5010,7 +5010,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -5051,7 +5051,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>MDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/MDC_MultiSwathDopMain</File_Name>
@@ -5081,7 +5081,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WPC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WPC_ProcMain</File_Name>
@@ -5111,7 +5111,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -5162,14 +5162,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>EW_RAW__0_GRDM_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">25000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -5228,7 +5228,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -5377,7 +5377,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -5386,7 +5386,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -5395,7 +5395,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -5436,7 +5436,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>MDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/MDC_MultiSwathDopMain</File_Name>
@@ -5466,7 +5466,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WPC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WPC_ProcMain</File_Name>
@@ -5496,7 +5496,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -5547,14 +5547,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>EW_RAW__0_OCN__2_GRDM_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">25000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -5613,7 +5613,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -5762,7 +5762,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -5771,7 +5771,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -5780,7 +5780,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -5821,7 +5821,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>MDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/MDC_MultiSwathDopMain</File_Name>
@@ -5851,7 +5851,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WPC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WPC_ProcMain</File_Name>
@@ -5881,7 +5881,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -5926,7 +5926,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC2</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC2_ProcMain.sh</File_Name>
@@ -5957,7 +5957,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LOP</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LOP_ProcMain</File_Name>
@@ -6079,7 +6079,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>ProcEND</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/IPF_ProcEND</File_Name>
@@ -6140,14 +6140,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>EW_RAW__0_OCN__2</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">25000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -6206,7 +6206,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -6355,7 +6355,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -6364,7 +6364,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -6373,7 +6373,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -6414,7 +6414,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>MDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/MDC_MultiSwathDopMain</File_Name>
@@ -6444,7 +6444,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WPC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WPC_ProcMain</File_Name>
@@ -6474,7 +6474,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -6519,7 +6519,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC2</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC2_ProcMain.sh</File_Name>
@@ -6550,7 +6550,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LOP</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LOP_ProcMain</File_Name>
@@ -6593,7 +6593,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
+                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_ICE</File_Type>
@@ -6608,7 +6608,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
+                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_WAV</File_Type>
@@ -6623,7 +6623,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
+                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_WND</File_Type>
@@ -6672,7 +6672,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>ProcEND</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/IPF_ProcEND</File_Name>
@@ -6733,14 +6733,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>EW_RAW__0_SLC__1_GRDH_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">25000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -6799,7 +6799,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -6948,7 +6948,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -6957,7 +6957,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -6966,7 +6966,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -7007,7 +7007,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>MDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/MDC_MultiSwathDopMain</File_Name>
@@ -7037,7 +7037,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WPC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WPC_ProcMain</File_Name>
@@ -7067,7 +7067,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -7118,7 +7118,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC2</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC2_ProcMain.sh</File_Name>
@@ -7155,14 +7155,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>EW_RAW__0_SLC__1_GRDM_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">25000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -7221,7 +7221,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -7370,7 +7370,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -7379,7 +7379,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -7388,7 +7388,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -7429,7 +7429,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>MDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/MDC_MultiSwathDopMain</File_Name>
@@ -7459,7 +7459,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WPC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WPC_ProcMain</File_Name>
@@ -7489,7 +7489,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -7540,7 +7540,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC2</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC2_ProcMain.sh</File_Name>
@@ -7577,14 +7577,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>EW_RAW__0_SLC__1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">25000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -7643,7 +7643,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -7792,7 +7792,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -7801,7 +7801,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -7810,7 +7810,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -7851,7 +7851,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>MDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/MDC_MultiSwathDopMain</File_Name>
@@ -7881,7 +7881,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WPC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WPC_ProcMain</File_Name>
@@ -7911,7 +7911,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -7962,14 +7962,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>IW_RAW__0_GRDH_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">33000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -8028,7 +8028,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -8177,7 +8177,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -8186,7 +8186,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -8195,7 +8195,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -8236,7 +8236,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>MDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/MDC_MultiSwathDopMain</File_Name>
@@ -8266,7 +8266,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WPC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WPC_ProcMain</File_Name>
@@ -8296,7 +8296,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -8347,14 +8347,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>IW_RAW__0_GRDM_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">33000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -8413,7 +8413,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -8562,7 +8562,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -8571,7 +8571,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -8580,7 +8580,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -8621,7 +8621,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>MDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/MDC_MultiSwathDopMain</File_Name>
@@ -8651,7 +8651,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WPC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WPC_ProcMain</File_Name>
@@ -8681,7 +8681,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -8732,14 +8732,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>IW_RAW__0_OCN__2_GRDM_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">33000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -8798,7 +8798,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -8947,7 +8947,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -8956,7 +8956,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -8965,7 +8965,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -9006,7 +9006,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>MDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/MDC_MultiSwathDopMain</File_Name>
@@ -9036,7 +9036,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WPC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WPC_ProcMain</File_Name>
@@ -9066,7 +9066,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -9111,7 +9111,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC2</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC2_ProcMain.sh</File_Name>
@@ -9142,7 +9142,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LOP</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LOP_ProcMain</File_Name>
@@ -9264,7 +9264,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>ProcEND</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/IPF_ProcEND</File_Name>
@@ -9325,14 +9325,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>IW_RAW__0_OCN__2</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">33000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -9391,7 +9391,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -9540,7 +9540,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -9549,7 +9549,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -9558,7 +9558,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -9599,7 +9599,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>MDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/MDC_MultiSwathDopMain</File_Name>
@@ -9629,7 +9629,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WPC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WPC_ProcMain</File_Name>
@@ -9659,7 +9659,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -9704,7 +9704,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC2</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC2_ProcMain.sh</File_Name>
@@ -9735,7 +9735,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LOP</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LOP_ProcMain</File_Name>
@@ -9778,7 +9778,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
+                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_ICE</File_Type>
@@ -9793,7 +9793,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
+                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_WAV</File_Type>
@@ -9808,7 +9808,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
+                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_WND</File_Type>
@@ -9857,7 +9857,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>ProcEND</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/IPF_ProcEND</File_Name>
@@ -9918,14 +9918,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>IW_RAW__0_SLC__1_GRDH_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">33000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -9984,7 +9984,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -10133,7 +10133,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -10142,7 +10142,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -10151,7 +10151,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -10192,7 +10192,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>MDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/MDC_MultiSwathDopMain</File_Name>
@@ -10222,7 +10222,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WPC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WPC_ProcMain</File_Name>
@@ -10252,7 +10252,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -10303,7 +10303,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC2</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC2_ProcMain.sh</File_Name>
@@ -10340,14 +10340,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>IW_RAW__0_SLC__1_GRDM_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">33000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -10406,7 +10406,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -10555,7 +10555,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -10564,7 +10564,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -10573,7 +10573,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -10614,7 +10614,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>MDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/MDC_MultiSwathDopMain</File_Name>
@@ -10644,7 +10644,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WPC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WPC_ProcMain</File_Name>
@@ -10674,7 +10674,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -10725,7 +10725,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC2</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC2_ProcMain.sh</File_Name>
@@ -10762,14 +10762,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>IW_RAW__0_SLC__1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">33000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -10828,7 +10828,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -10977,7 +10977,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -10986,7 +10986,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -10995,7 +10995,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -11036,7 +11036,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>MDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/MDC_MultiSwathDopMain</File_Name>
@@ -11066,7 +11066,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WPC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WPC_ProcMain</File_Name>
@@ -11096,7 +11096,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -11147,14 +11147,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>SM_RAW__0_GRDF_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">41000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -11213,7 +11213,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -11362,7 +11362,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -11371,7 +11371,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -11380,7 +11380,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -11421,7 +11421,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SDC_SingleSwathDopMain</File_Name>
@@ -11451,7 +11451,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SBE</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SBE_CntSceMain</File_Name>
@@ -11481,7 +11481,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -11532,14 +11532,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>SM_RAW__0_GRDH_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">41000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -11598,7 +11598,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -11747,7 +11747,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -11756,7 +11756,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -11765,7 +11765,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -11806,7 +11806,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SDC_SingleSwathDopMain</File_Name>
@@ -11836,7 +11836,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SBE</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SBE_CntSceMain</File_Name>
@@ -11866,7 +11866,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -11917,14 +11917,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>SM_RAW__0_GRDM_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">41000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -11983,7 +11983,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -12132,7 +12132,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -12141,7 +12141,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -12150,7 +12150,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -12191,7 +12191,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SDC_SingleSwathDopMain</File_Name>
@@ -12221,7 +12221,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SBE</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SBE_CntSceMain</File_Name>
@@ -12251,7 +12251,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -12302,14 +12302,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>SM_RAW__0_OCN__2_GRDM_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">41000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -12368,7 +12368,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -12517,7 +12517,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -12526,7 +12526,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -12535,7 +12535,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -12576,7 +12576,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SDC_SingleSwathDopMain</File_Name>
@@ -12606,7 +12606,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SBE</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SBE_CntSceMain</File_Name>
@@ -12636,7 +12636,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -12681,7 +12681,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC2</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC2_ProcMain.sh</File_Name>
@@ -12712,7 +12712,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LOP</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LOP_ProcMain</File_Name>
@@ -12864,7 +12864,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>ProcEND</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/IPF_ProcEND</File_Name>
@@ -12925,14 +12925,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>SM_RAW__0_OCN__2</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">41000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -12991,7 +12991,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -13140,7 +13140,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -13149,7 +13149,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -13158,7 +13158,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -13199,7 +13199,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SDC_SingleSwathDopMain</File_Name>
@@ -13229,7 +13229,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SBE</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SBE_CntSceMain</File_Name>
@@ -13259,7 +13259,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -13304,7 +13304,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC2</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC2_ProcMain.sh</File_Name>
@@ -13335,7 +13335,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LOP</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LOP_ProcMain</File_Name>
@@ -13393,7 +13393,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
+                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_ICE</File_Type>
@@ -13408,7 +13408,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
+                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_WAV</File_Type>
@@ -13423,7 +13423,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
+                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_WND</File_Type>
@@ -13487,7 +13487,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>ProcEND</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/IPF_ProcEND</File_Name>
@@ -13548,14 +13548,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>SM_RAW__0_SLC__1_GRDF_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">41000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -13614,7 +13614,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -13763,7 +13763,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -13772,7 +13772,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -13781,7 +13781,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -13822,7 +13822,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SDC_SingleSwathDopMain</File_Name>
@@ -13852,7 +13852,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SBE</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SBE_CntSceMain</File_Name>
@@ -13882,7 +13882,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -13933,7 +13933,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC2</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC2_ProcMain.sh</File_Name>
@@ -13970,14 +13970,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>SM_RAW__0_SLC__1_GRDH_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">41000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -14036,7 +14036,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -14185,7 +14185,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -14194,7 +14194,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -14203,7 +14203,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -14244,7 +14244,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SDC_SingleSwathDopMain</File_Name>
@@ -14274,7 +14274,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SBE</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SBE_CntSceMain</File_Name>
@@ -14304,7 +14304,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -14355,7 +14355,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC2</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC2_ProcMain.sh</File_Name>
@@ -14392,14 +14392,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>SM_RAW__0_SLC__1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">41000</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -14458,7 +14458,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -14607,7 +14607,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -14616,7 +14616,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -14625,7 +14625,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -14666,7 +14666,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SDC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SDC_SingleSwathDopMain</File_Name>
@@ -14696,7 +14696,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>SBE</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/SBE_CntSceMain</File_Name>
@@ -14726,7 +14726,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -14777,14 +14777,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>WV_RAW__0_GRDM_1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">7200</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -14843,7 +14843,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -14947,7 +14947,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -14956,7 +14956,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -14965,7 +14965,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -15006,7 +15006,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WVP</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WVP_WaveProcessMain</File_Name>
@@ -15036,7 +15036,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -15087,14 +15087,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>WV_RAW__0_OCN__2_SLC__1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">7200</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -15153,7 +15153,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -15257,7 +15257,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -15266,7 +15266,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -15275,7 +15275,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -15316,7 +15316,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WVP</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WVP_WaveProcessMain</File_Name>
@@ -15346,7 +15346,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -15405,7 +15405,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LOP</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LOP_ProcMain</File_Name>
@@ -15559,7 +15559,7 @@ data:
     	  <!--
     	        ProcEND is in charge of filling the LIST file for L2 processing at the end.
     	  -->
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/IPF_ProcEND</File_Name>
@@ -15620,14 +15620,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>WV_RAW__0_OCN__2</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">7200</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -15686,7 +15686,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -15790,7 +15790,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -15799,7 +15799,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -15808,7 +15808,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -15849,7 +15849,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WVP</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WVP_WaveProcessMain</File_Name>
@@ -15879,7 +15879,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -15938,7 +15938,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LOP</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LOP_ProcMain</File_Name>
@@ -15995,7 +15995,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
+                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_ICE</File_Type>
@@ -16010,7 +16010,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
+                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_WAV</File_Type>
@@ -16025,7 +16025,7 @@ data:
                     <Alternative>
                       <Order>1</Order>
                       <Origin>DB</Origin>
-                      <Retrieval_Mode>ClosestStartValidity</Retrieval_Mode>
+                      <Retrieval_Mode>LatestValidityClosest</Retrieval_Mode>
                       <T0>0.0</T0>
                       <T1>0.0</T1>
                       <File_Type>AUX_WND</File_Type>
@@ -16092,7 +16092,7 @@ data:
     	  <!--
     	        ProcEND is in charge of filling the LIST file for L2 processing at the end.
     	  -->
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/IPF_ProcEND</File_Name>
@@ -16153,14 +16153,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>WV_RAW__0_SLC__1</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">7200</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -16219,7 +16219,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>PSC</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/PSC_PreprocMain</File_Name>
@@ -16323,7 +16323,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_POE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -16332,7 +16332,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_RES</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -16341,7 +16341,7 @@ data:
                       <Origin>DB</Origin>
                       <Retrieval_Mode>LatestValCover</Retrieval_Mode>
                       <T0>0.0</T0>
-                      <T1>0.0</T1>
+                      <T1>360.0</T1>
                       <File_Type>AUX_PRE</File_Type>
                       <File_Name_Type>Physical</File_Name_Type>
                     </Alternative>
@@ -16382,7 +16382,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>WVP</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/WVP_WaveProcessMain</File_Name>
@@ -16412,7 +16412,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LPC1</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LPC1_ProcMain.sh</File_Name>
@@ -16463,14 +16463,14 @@ data:
     <?xml version='1.0' encoding='UTF-8'?>
     <Ipf_Task_Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TaskTable_S1.xsd">
       <Processor_Name>WV_SLC__1_OCN__2</Processor_Name>
-      <Version>3.80</Version>
+      <Version>3.90</Version>
       <Test>No</Test>
       <Min_Disk_Space units="MB">7200</Min_Disk_Space>
       <Max_Time>0</Max_Time>
       <!--no time limit for execution-->
       <List_of_Cfg_Files>
         <Cfg_Files>
-          <Version>3.80</Version>
+          <Version>3.90</Version>
           <File_Name>/usr/local/components/S1IPF/etc/processorConfiguration.xml</File_Name>
         </Cfg_Files>
       </List_of_Cfg_Files>
@@ -16538,7 +16538,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>LOP</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/LOP_ProcMain</File_Name>
@@ -16689,7 +16689,7 @@ data:
           <List_of_Tasks count="1">
             <Task>
               <Name>ProcEND</Name>
-              <Version>3.80</Version>
+              <Version>3.90</Version>
               <Critical>true</Critical>
               <Criticality_Level>2</Criticality_Level>
               <File_Name>/usr/local/components/S1IPF/bin/IPF_ProcEND</File_Name>
