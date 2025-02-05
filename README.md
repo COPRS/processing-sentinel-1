@@ -25,6 +25,8 @@ The following individual processing chains are available:
 
 - [S1 AIOP](./s1-l0aiop/doc/ReleaseNote.md)
 - [S1 ASP](./s1-l0asp/doc/ReleaseNote.md)
+- [S1 L1](./s1-l1/doc/ReleaseNote.md)
+- [S1 L2](./s1-l2/doc/ReleaseNote.md)
 
 For more information, please consult [https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1](https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1)
 
